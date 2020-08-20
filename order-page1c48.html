@@ -1,0 +1,2715 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<!-- Mirrored from www.WashyCare.com/order-page?service=maid by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 13 Aug 2020 20:47:19 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-language" content="en" />
+<meta name="description" content="WashyCare Cleaners - laundry service in New York, apartment cleaning, move out cleaning, dry cleaning with pickup and delivery"/>
+<meta name="keywords" content="Order laundry pickup, schedule dry cleaning, New York Dry Cleaning, New York Laundry, laundry near me, dry cleaners nearby, wash and fold near me, organic dry cleaners"/>
+<meta name="keyphrases" content="laundry pick up near me, laundry service near me, organic dry cleaners, dry cleaners nearby"/>
+<meta name="abstract" content="WashyCare is a place where you can trust your labels to be handled with care."/>
+<meta name="neighborhood" content="manhattan,brooklyn,soho,east village,west village,greenwich village,lower east side,battery park,chelsea,fidi,financial district,chinatown,little italy,gramercy,garment district,midtown east,midtown west,times square,murray hill,upper east side,upper west side,tribeca">
+<meta name="zipcode" content="10001, 10002, 10003, 10004, 10005, 10006, 10007, 10008, 10009, 10010, 10011, 10012, 10013, 10014, 10015, 10016, 10017, 10018, 10019, 10020, 10021, 10022, 10023, 10024, 10025, 10026, 10028, 10128, 10029, 10038, 10036, 10065, 10041, 10075, 10081, 10105, 10107, 10118, 10122, 10111, 10120, 10121, 10131, 10133, 10138, 10152, 10153, 10154, 10166, 10167, 10169, 10172, 10211, 10213, 10280, 10281, 10282, 10271, 11251, 11201, 11206, 11231, 11217, 11225, 11238, 11216, 11215, 11211, 11206, 11249, 11205, 11222"> <!--,11251,11201,11206,11231,11217,11238,11216,11225,11215,11211,11206,11249-->
+<meta name="rating" content="General"/>
+<meta name="Robots" content="index, follow"/>
+<meta name="copyright" content="copyright 2020 WashyCare Cleaners"/>
+<meta name="msvalidate.01" content="8317B5E18CA51C2F6D76AE313FD03FA1" />
+<title>Order Laundry, dry cleaning with pickup & delivery or home cleaning service - WashyCare </title>
+<link href="assets/templates/eflaundry/images/favicon.ico" type="image/x-icon" rel="SHORTCUT ICON" />
+
+<link href="assets/templates/eflaundry/images/favicon/favicon_64.ico" type="image/x-icon" rel="SHORTCUT ICON" />
+<link rel="apple-touch-icon" sizes="180x180" href="assets/templates/eflaundry/images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/templates/eflaundry/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/templates/eflaundry/images/favicon/favicon-16x16.png">
+<link rel="mask-icon" href="assets/templates/eflaundry/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<script type="text/javascript" src="assets/templates/eflaundry/js/jquery-2.11.js"></script>
+<script src="assets/templates/eflaundry/js/creditcard.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="files/main.css">-->
+<!--<link rel="stylesheet" href="./files/main_home.css">-->
+<!-- endinject -->
+	<!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-4742776-7"></script>-->
+
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+				new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-WBQ4DT5');</script>
+	<!-- End Google Tag Manager -->
+		
+
+
+<script>
+	function HotelUser(){
+		var date = new Date();
+		date.setTime(date.getTime() + (4*60*60*1000));
+		var expires = "expires=" + date.toUTCString();
+		document.cookie = "hotel_user=1" + "; " + expires;
+		document.getElementById('zipcode_alert').innerHTML='Hotel customers are not eligible for $10 discount'; 
+		document.getElementById('discount').value=0; 
+		document.getElementsByClassName('global-alert')[0].classList.remove('alert-open');
+		document.getElementById('tourist').value = 'on';
+		setDiscount(0, '');
+	}
+	
+	function getCookie(name) {
+		var nameEQ = name + "=";
+		var ca = document.cookie.split(';');
+		for(var i=0; i < ca.length; i++) {
+			var c = ca[i];
+			while (c.charAt(0)==' ') c = c.substring(1,c.length);
+			if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+		}
+		return null;
+	}
+	
+	function LogStep(step) {
+		if(document.getElementById('service').value == "maid"){
+			var maid = "maid-";
+		} else {
+			var maid = "";
+		}
+		if (document.getElementById('user_id').value > 0) {
+			dataLayer.push({
+				'event': 'user-' + maid + step
+			});
+			if (typeof hj === "function") {
+				hj('stateChange', '?step=user-' + maid + step);
+			}
+			console.log("LOGGING STEP user-" + maid + step);
+		} else {
+			dataLayer.push({
+				'event': maid + step
+			});
+			if (typeof hj === "function") {
+				hj('stateChange', '?step=' + maid + step);
+			}
+			console.log("LOGGING STEP " + maid + step);
+		}
+	}
+
+	function ZipcodeLogs(zipcode) {
+		var xmlhttp;
+		var address = document.getElementById('address-form').value;
+		var error_zip = document.getElementById('error_zip').value;
+		if(zipcode == error_zip){
+			console.log("already submitted this zipcode");
+			return;
+		}
+		document.getElementById('error_zip').value = zipcode;
+		xmlhttp = new XMLHttpRequest();
+		xmlhttp.onreadystatechange = function() {
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+				var str = xmlhttp.responseText;
+				console.log("Zipcode logged successfully" + str);
+
+			} else if (xmlhttp.status == 500) {
+				console.log("didnt get a responce. Error Occured");
+			}
+		}
+		var var_url = encodeURI("customers-logs?zipcode=" + zipcode + "&address=" + address);
+		console.log(var_url);
+		xmlhttp.open("GET.html", var_url, true);
+		xmlhttp.send();
+	}
+
+	function WashOrder(id) {
+		if (id < 3) {
+			for (var i = 0; i < 3; i++) {
+				document.getElementById('detergent_' + i).classList.remove('active');
+			}
+			document.getElementById('detergent_' + id).classList.add('active');
+			document.getElementById('detergent').value = id;
+		} else if (id < 6) {
+			if (!document.getElementById('supply_' + id).classList.contains('active')) {
+				for (var i = 3; i < 6; i++) {
+					document.getElementById('supply_' + i).classList.remove('active');
+				}
+				document.getElementById('supply_' + id).classList.add('active');
+				document.getElementById('softener').value = id - 2;
+			} else {
+				for (var i = 3; i < 6; i++) {
+					document.getElementById('supply_' + i).classList.remove('active');
+				}
+				document.getElementById('softener').value = 0;
+			}
+		} else {
+			if (id == 6) {
+				if (document.getElementById('clorox').value == 0) {
+					document.getElementById('clorox').value = 1;
+					document.getElementById('supply_' + id).classList.add('active');
+					document.getElementById('total_1').innerHTML = parseInt(document.getElementById('total_1').innerHTML) + 2;
+					document.getElementById('total_2').innerHTML = parseInt(document.getElementById('total_2').innerHTML) + 2;
+				} else {
+					document.getElementById('clorox').value = 0;
+					document.getElementById('supply_' + id).classList.remove('active');
+					document.getElementById('total_1').innerHTML = parseInt(document.getElementById('total_1').innerHTML) - 2;
+					document.getElementById('total_2').innerHTML = parseInt(document.getElementById('total_2').innerHTML) - 2;
+				}
+			}
+			if (id == 7) {
+				if (document.getElementById('bag').value == 0) {
+					document.getElementById('bag').value = 1;
+					document.getElementById('supply_' + id).classList.add('active');
+					document.getElementById('total_1').innerHTML = parseInt(document.getElementById('total_1').innerHTML) + 5;
+					document.getElementById('total_2').innerHTML = parseInt(document.getElementById('total_2').innerHTML) + 5;
+				} else {
+					document.getElementById('bag').value = 0;
+					document.getElementById('supply_' + id).classList.remove('active');
+					document.getElementById('total_1').innerHTML = parseInt(document.getElementById('total_1').innerHTML) - 5;
+					document.getElementById('total_2').innerHTML = parseInt(document.getElementById('total_2').innerHTML) - 5;
+				}
+			}
+		}
+			var detergents = ["Tide", "Arm & Hammer", "Seventh Gen."];
+			var softeners = ["", "Downy", "Bounce Sheets", "Downy Free & Sens."];
+			if (document.getElementById('softener').value > 0) {
+				document.getElementById('wash_header_main').innerHTML = detergents[document.getElementById('detergent').value] + ', ' + softeners[document.getElementById('softener').value];
+				document.getElementById('detergent-receipt').innerHTML = detergents[document.getElementById('detergent').value];
+				document.getElementById('softener-receipt').innerHTML = ', ' + softeners[document.getElementById('softener').value];
+			} else {
+				document.getElementById('wash_header_main').innerHTML = detergents[document.getElementById('detergent').value];
+				document.getElementById('detergent-receipt').innerHTML = detergents[document.getElementById('detergent').value];
+			}
+			var tmp_var1 = document.getElementById('wash_header_main').innerHTML;
+			if(parseInt(tmp_var1.length)>12){
+				document.getElementById('wash_header_main').style.lineHeight = "17px";
+				document.getElementById('wash_header_main').style.marginBottom = "-5px";
+				document.getElementById('wash_header_main').style.fontSize = "20px";
+			} else {
+				document.getElementById('wash_header_main').style.lineHeight = "normal";
+				document.getElementById('wash_header_main').style.marginBottom = "0";
+				document.getElementById('wash_header_main').style.fontSize = "22px";
+			}
+		updateTotal();
+	}
+	
+    function UpdateCleanTime(){
+        var bedrooms = document.getElementById('bedrooms').value; // 15 mins each // 30 mins // 45 mins
+        var bathrooms = document.getElementById('bathrooms').value; // 30 mins - standard // 45 mins - premium // 75 mins - deep // move-in-out
+        var clean_type = document.getElementById('clean_type').value; // standard // premium // deep // move-in-out
+        var frequency =document.getElementById('frequency').value; 
+        var extras_1 = document.getElementById('extras_var_1').value; // 20 mins each
+        var extras_2 = document.getElementById('extras_var_2').value; // 20 mins each
+        var extras_3 = document.getElementById('extras_var_3').value; // 20 mins each
+        var bedrooms_time = ["0", "16", "25", "35", "35"];
+        var bathrooms_time = ["0","20", "30", "50", "50"];
+        var base_time = ["0","90", "110", "145", "145"];
+        var time = parseFloat(base_time[clean_type]) + (bedrooms * bedrooms_time[clean_type]) + (bathrooms * bathrooms_time[clean_type]) + (clean_type * 15);
+        console.log("time is " + time);
+        time = time/60;
+        time = parseFloat((Math.round(time * 4) / 4));
+		if(frequency==1){
+			frequency = 0;
+		}
+		if(document.getElementById('maid_orders')){
+			if(document.getElementById('maid_orders').value == 0){
+				var time_disc = 0.5;
+			} else {
+				var time_disc = 1 - (0.05*frequency);
+			}
+		} else {
+			var time_disc = 1 - (0.05*frequency);
+		}
+        
+		console.log(time_disc);
+        if(time>1){
+            var price_per_hour = 50;
+        } else if(time>2){
+            var price_per_hour = 50;
+        } else if(time>3){
+            var price_per_hour = 45;
+        } else if(time>4){
+            var price_per_hour = 35;
+        } else if(time>5){
+            var price_per_hour = 30;
+        } else if(time>6){
+            var price_per_hour = 30;
+        } else if(time>7){
+            var price_per_hour = 30;
+        } else {
+            var price_per_hour = 50;
+        }
+		if(clean_type == 3){
+			var deep_disc = 80;
+		} else if(clean_type == 4){
+			var deep_disc = 90;
+		} else {
+			var deep_disc = 0;
+		}
+        var extra_clean = extras_1 * 30 + extras_2 * 30 + extras_3 * 30 - deep_disc;
+        document.getElementById('clean_type-time-header').innerHTML = "~" + time.toFixed(2) + " hours";
+		document.getElementById('softener-receipt').innerHTML = " (" + document.getElementById('clean_type-time-header').innerHTML + ")";
+        var cleaning_total = 30 + parseFloat((time*price_per_hour).toFixed(0)) + extra_clean;
+		var cleaning_discount = Math.round(cleaning_total - (30 + parseFloat((time*price_per_hour).toFixed(0)) + extra_clean)*time_disc);
+        //console.log(cleaning_total);
+        var tips = document.getElementById('tips').value;
+        var discount = document.getElementById('discount').value;
+		
+        var total = parseInt(cleaning_total) + parseInt(tips) - parseInt(discount) - parseInt(cleaning_discount);
+		//var total = parseInt(total);
+        //console.log(total);
+        document.getElementById('clean_total').value = parseInt(cleaning_total);
+        document.getElementById('total').value = total;
+        document.getElementById('tips-receipt-price').innerHTML = "$" + tips + ".00";
+        document.getElementById('total_1').innerHTML = total;
+        document.getElementById('total_2').innerHTML = total;
+		document.getElementById('cleaning_discount').value = cleaning_discount;
+        document.getElementById('total').value;
+        document.getElementById('total-receipt').innerHTML = "<b style=\"font-size:10px;\">$</b>" + total + ".00";
+		document.getElementById('subtotal-receipt').innerHTML = "$" + parseInt(cleaning_total) + ".00";
+    }
+    
+    function MaidOrder(type,id){
+        //if (type == "bedrooms" || type == "bathrooms" || type == "clean_type") {
+			for (var i = 0; i < 6; i++) {
+                var str_type =  type + "_" + i;
+                if(document.getElementById(str_type)){
+                    if (type != "extras") {
+                        document.getElementById(str_type).classList.remove('active');
+                    }
+                }
+			}
+            var str_type =  type + "_" + id;
+            if (type == "bedrooms" || type == "bathrooms" || type == "clean_type") {
+                document.getElementById(type + '_header_main').innerHTML = document.getElementById(str_type).innerHTML;
+                if(type == "clean_type" && (id=="3" || id=="4")){
+                    console.log("add " + type);
+                    document.getElementById("extras_1").classList.add('active');
+                    document.getElementById("extras_2").classList.add('active');
+                    document.getElementById("extras_3").classList.add('active');
+					document.getElementById("extras_var_1").value = 1;
+					document.getElementById("extras_var_2").value = 1;
+					document.getElementById("extras_var_3").value = 1;
+                    document.getElementById("maid_frequency").style.display = 'none';
+                    document.getElementById("frequency_1").classList.add('active');
+                    document.getElementById("frequency_3").classList.remove('active');
+                    document.getElementById("frequency_2").classList.remove('active');
+                    document.getElementById("frequency_4").classList.remove('active');
+                    document.getElementById("frequency").value = 1;
+                } else if(type == "clean_type") {
+                    console.log("remove " + type);
+                    document.getElementById("extras_1").classList.remove('active');
+                    document.getElementById("extras_2").classList.remove('active');
+                    document.getElementById("extras_3").classList.remove('active');
+					document.getElementById("extras_var_1").value = 0;
+					document.getElementById("extras_var_2").value = 0;
+					document.getElementById("extras_var_3").value = 0;
+                    document.getElementById("maid_frequency").style.display = 'block';
+                    document.getElementById("frequency_3").classList.add('active');
+                    document.getElementById("frequency_1").classList.remove('active');
+                    document.getElementById("frequency_2").classList.remove('active');
+                    document.getElementById("frequency_4").classList.remove('active');
+                    //document.getElementById("frequency").value = 3;
+                }
+            }
+            if (type == "extras") {
+                var clean_type = parseInt(document.getElementById("clean_type").value);
+                if(document.getElementById(str_type).classList.contains('active') && (clean_type!=3 && clean_type!=4)){
+                    console.log("remove " + clean_type);
+                    document.getElementById(str_type).classList.remove('active');
+                    var tmp_var = type + "_var_" + id;
+                    document.getElementById(tmp_var).value = 0;
+                } else {
+                    document.getElementById(str_type).classList.add('active');
+                    var tmp_var = type + "_var_" + id;
+                    document.getElementById(tmp_var).value = 1;
+                }
+            } else {
+                document.getElementById(str_type).classList.add('active');
+                document.getElementById(type).value = id;
+            }
+		
+		if(document.getElementById("bedrooms").value==0){
+			var bedrooms_text = "Studio";
+		} else {
+			var bedrooms_text = document.getElementById("bedrooms").value + " Bedroom";
+		}
+		var clean_type_text = ["", "Standard Clean", "Premium Clean", "Deep Clean", "Move In/Out Clean"];
+		var frequency_text = ["One Time", "One Time", "Every 4 Weeks", "Every 2 Weeks", "Weekly"];
+		var addons_text = ["", "Inside Fridge", "Inside Oven", "Inside Cabinets"];
+		var bathrooms_text = document.getElementById("bathrooms").value + " Bathroom";
+		document.getElementById("service-receipt").innerHTML = bedrooms_text + ', '+ bathrooms_text;
+		document.getElementById("detergent-receipt").innerHTML = clean_type_text[document.getElementById("clean_type").value];
+		document.getElementById("frequency-part-receipt").innerHTML = frequency_text[document.getElementById("frequency").value] + " - Cleaning on";
+		//add-on-receipt-part //add-on-receipt
+		var count_addons = 0;
+		var addons = "";
+		for(var k=1; k<4; k++){
+			if(document.getElementById("extras_var_" + k).value == 1){
+				if(count_addons>0){
+					addons = addons + ", " + addons_text[k];
+				} else {
+					addons = addons_text[k];
+				}
+				document.getElementById("add-on-receipt-part").style.display = "block";
+				count_addons++;
+			}
+		}
+		if(count_addons == 0){
+			document.getElementById("add-on-receipt-part").style.display = "none";
+		} else {
+			document.getElementById("add-on-receipt-part").innerHTML = "Add-Ons: " + addons;
+		}
+        UpdateCleanTime();
+    }
+	
+	function parse_query_string(query) {
+		var vars = query.split("&");
+		var query_string = {};
+		for (var i = 0; i < vars.length; i++) {
+			var pair = vars[i].split("=");
+			var key = decodeURIComponent(pair[0]);
+			var value = decodeURIComponent(pair[1]);
+			// If first entry with this name
+			if (typeof query_string[key] === "undefined") {
+				query_string[key] = decodeURIComponent(value);
+				// If second entry with this name
+			} else if (typeof query_string[key] === "string") {
+				var arr = [query_string[key], decodeURIComponent(value)];
+				query_string[key] = arr;
+				// If third or later entry with this name
+			} else {
+				query_string[key].push(decodeURIComponent(value));
+			}
+		}
+		return query_string;
+	}
+
+	//console.log(qs['time-start'].replace(/\+/g," "));
+
+	function toWashSchedule() {
+		LogStep('step2a');
+
+		if (document.getElementById('service').value == 'dryclean') {
+			if (!document.getElementById('wash_header_main').innerHTML) {
+				document.getElementById('wash_header_main').innerHTML = "Express";
+				document.getElementById('detergent-receipt').innerHTML = "Express";
+				document.getElementById('clorox-bag-receipt').style.display = "none";
+			}
+			document.getElementById('wash_header_sub').innerHTML = "Items";
+			document.getElementById('service-receipt').innerHTML = "Dry Cleaning";
+			document.getElementById('minimum-receipt').innerHTML = "$30";
+			document.getElementById('minimum-receipt-sub').innerHTML = "Prices listed are general and may change depending on the type of material, size and thickness. Silk, fur, beads, leather require special treatment. Additional charge will be added to the order if special treatment needed or additional items are added.";
+			document.getElementById('minimum-receipt-sub-price').innerHTML = "";
+		} else if (document.getElementById('service').value == 'maid') {
+			//document.getElementById('detergent-receipt').innerHTML = "detergent-receipt";
+			document.getElementById('clorox-bag-receipt').style.display = "none";
+			document.getElementById('minimum-receipt-sub').innerHTML = "Price per appoinment is an estimate and may be higher if additional services are requested or instructed to spend more time.";
+			if(document.getElementById('detergent-receipt').innerHTML == "Tide"){
+				document.getElementById('detergent-receipt').innerHTML = "Standard Clean";
+			}
+			document.getElementById('minimum-receipt-sub-price').innerHTML = "";
+		} else {
+			
+			if (document.getElementById('clorox').value > 0) {
+				document.getElementById('clorox-receipt').innerHTML = "Bleach +$2";
+				document.getElementById('clorox-receipt-extra').innerHTML = "Bleach";
+				document.getElementById('clorox-receipt-extra-price').innerHTML = "+$2.00";
+				if (document.getElementById('bag').value > 0) {
+					document.getElementById('bag-receipt').innerHTML = ", Laundry Bag +$5";
+					document.getElementById('bag-receipt-extra').innerHTML = "Laundry Bag";
+					document.getElementById('bag-receipt-extra-price').innerHTML = "+$5.00";
+				}
+			} else if (document.getElementById('bag').value > 0) {
+				document.getElementById('bag-receipt').innerHTML = "Laundry Bag +$5";
+				document.getElementById('bag-receipt-extra').innerHTML = "Laundry Bag";
+				document.getElementById('bag-receipt-extra-price').innerHTML = "+5.00";
+			} else {
+				document.getElementById('clorox-bag-receipt').style.display = 'none';
+				document.getElementById('clorox-receipt').innerHTML = "";
+				document.getElementById('clorox-receipt-extra').innerHTML = "";
+				document.getElementById('clorox-receipt-extra-price').innerHTML = "";
+				document.getElementById('bag-receipt').innerHTML = "";
+				document.getElementById('bag-receipt-extra').innerHTML = "";
+				document.getElementById('bag-receipt-extra-price').innerHTML = "";
+			}
+		}
+		var query = window.location.search.substring(1);
+		var qs = parse_query_string(query);
+		if(typeof qs !== 'undefined' && qs['day-start']){ //&& qs['washyCare'] == 1
+
+			document.getElementById('washorder').style.display = 'none';
+			document.getElementById('wash-header').classList.remove('not-visible');
+			checkSameDay();
+			//document.getElementById('washschedule').style.display = 'block';
+			toWashAddress();
+		} else {
+			document.getElementById('washorder').style.display = 'none';
+			document.getElementById('washschedule').style.display = 'block';
+			document.getElementById('wash-header').classList.remove('not-visible');
+			ScrollToTop();
+		}
+
+	}
+	
+	function toWashAddress() {
+		LogStep('step3a');
+		if (document.getElementById('service').value == 'maid') {
+			document.getElementById('tips-form').value = 15;
+			document.getElementById('tips').value = 15;
+		} else {
+			document.getElementById('tips-form').value = 5;
+			document.getElementById('tips').value = 5;
+		}
+		document.getElementById('washschedule').style.display = 'none';
+		document.getElementById('washaddress').style.display = 'block';
+		ScrollToTop();
+		document.getElementById('pickup-header').classList.remove('not-visible');
+		document.getElementById('dropoff-header').classList.remove('not-visible');
+		document.getElementById('starting-header').classList.remove('not-visible');
+		if(document.getElementById('service')=="maid"){
+			setDiscount(40, "First Cleaning Order Discount");
+		} else {
+			setDiscount(10, "First Order Discount");
+		}
+		if (document.getElementById('user_id').value > 0) {
+			document.getElementById('address-step').style.display = 'none';
+			document.getElementById('discount-code-form').style.display = 'none';
+			document.getElementById('address-form').value = document.getElementById('address').value;
+			document.getElementById('apartment-form').value = document.getElementById('apartment').value;
+			document.getElementById('zipcode-form').value = document.getElementById('zipcode').value;
+			//document.getElementById('logged-in-text1').innerHTML = "Please review your order information before submitting it";
+			//document.getElementById('logged-in-text2').innerHTML = "Please review your order information before submitting it";
+			var discount = document.getElementById('discount').value;
+			setDiscount(discount, "");
+		} else {
+
+		//if (!document.getElementById('user_id').value) {
+		
+			if(document.getElementById("referral_email").value == "corona_discount"){
+				setDiscount(15, "IM AFFECTED DISCOUNT 60% OFF ~ ");
+				document.getElementsByClassName("global-alert")[1].classList.add("alert-open");
+				document.getElementById('tip-header').innerHTML = 'Estimated price based on 23 lbs bag. It will be adjusted according to weight of the bag at $0.63 /lb';
+				document.getElementById("discount-receipt").innerHTML = "IM AFFECTED DISCOUNT 60% OFF";
+				document.getElementById("discount-receipt-total-price").innerHTML = "60% OFF";
+				document.getElementById("discount-receipt-price").innerHTML = "60% OFF";
+				document.getElementById("discount").value = "15";
+				document.getElementById("total_1").innerHTML = "$15";
+				document.getElementById("total_2").innerHTML = "$15";
+				document.getElementById("referral_email").value = "corona_discount";
+				document.getElementsByClassName('global-alert')[0].style.display = "none";
+				document.getElementById("already-link1").style.display = "none";
+				document.getElementById("already-link2").style.display = "none";
+				document.getElementById("already-link3").style.display = "none";
+			} else {
+				console.log('Show discount window');
+				if (document.getElementById('service').value == 'maid') {
+					document.getElementsByClassName("global-alert")[3].classList.add("alert-open");
+				} else {
+					document.getElementsByClassName("global-alert")[0].classList.add("alert-open");
+				}
+			}
+		}
+		//}
+
+	}
+
+
+	function toWashName() {
+		checkSameDay();
+		if (document.getElementById('zipcode_alert').innerHTML == 'sorry you are outside of our <span style="text-decoration: underline; cursor: pointer;" onclick="document.getElementById(\'service-area-modal\').setAttribute(\'data-modal-state\',\'open\')">service area</span>') {
+			return;
+		}
+		if (!document.getElementById('address-form').value || !document.getElementById('apartment-form').value || !document.getElementById('zipcode-form').value) {
+			if (!document.getElementById('address-form').value) {
+				document.getElementById('address-form').style.borderColor = 'red';
+				document.getElementById('address-form').style.zIndex = '2';
+			} else {
+				document.getElementById('address-form').style.borderColor = '#dce1e5';
+			}
+			if (!document.getElementById('apartment-form').value) {
+				document.getElementById('apartment-form').style.borderColor = 'red';
+			} else {
+				document.getElementById('apartment-form').style.borderColor = '#dce1e5';
+			}
+			if (!document.getElementById('zipcode-form').value) {
+				document.getElementById('zipcode-form').style.borderColor = 'red';
+			} else {
+				document.getElementById('zipcode-form').style.borderColor = '#dce1e5';
+			}
+
+		} else {
+			LogStep('step4a');
+			document.getElementById('washaddress').style.display = 'none';
+			document.getElementById('washname').style.display = 'block';
+			document.getElementById('pickup-header').classList.remove('not-visible');
+			document.getElementById('dropoff-header').classList.remove('not-visible');
+			document.getElementById('address-header').classList.remove('not-visible');
+			document.getElementById('address-header-main').innerHTML = document.getElementById('address-form').value;
+			ScrollToTop();
+
+			document.getElementById('address').value = document.getElementById('address-form').value;
+			document.getElementById('apartment').value = document.getElementById('apartment-form').value;
+			document.getElementById('zipcode').value = document.getElementById('zipcode-form').value;
+			document.getElementById('tips').value = document.getElementById('tips-form').value;
+			document.getElementById('instructions').value = document.getElementById('instructions-form').value;
+			document.getElementById('address-receipt').innerHTML = document.getElementById('address-form').value;
+			document.getElementById('apartment-receipt').innerHTML = document.getElementById('apartment-form').value;
+			document.getElementById('zipcode-receipt').innerHTML = document.getElementById('zipcode-form').value;
+			document.getElementById('tips-receipt-price').innerHTML = "$" + document.getElementById('tips-form').value + ".00";
+
+			if (document.getElementById('instructions').value) {
+				document.getElementById('instructions-receipt').innerHTML = document.getElementById('instructions-form').value;
+			} else {
+				document.getElementById('instructions-receipt').innerHTML = "NO INSTRUCTIONS. Thank you for keeping it simple.";
+			}
+			document.getElementById('zipcode-receipt').innerHTML = document.getElementById('zipcode-form').value;
+
+			updateTotal();
+		}
+	}
+
+
+	function toWashReceipt() {
+		if ((!document.getElementById('firstname').value || !document.getElementById('lastname').value || !document.getElementById('phone').value) && (!document.getElementById('user_id').value || document.getElementById('user_id').value == "")) {
+
+			if (!document.getElementById('firstname').value) {
+				document.getElementById('firstname').style.borderColor = 'red';
+			} else {
+				document.getElementById('firstname').style.borderColor = '#dce1e5';
+			}
+			if (!document.getElementById('lastname').value) {
+				document.getElementById('lastname').style.borderColor = 'red';
+			} else {
+				document.getElementById('lastname').style.borderColor = '#dce1e5';
+			}
+			if (!document.getElementById('phone').value) {
+				document.getElementById('phone').style.borderColor = 'red';
+			} else {
+				document.getElementById('phone').style.borderColor = '#dce1e5';
+			}
+
+		} else {
+			ScrollToTop();
+
+
+			if (document.getElementById('user_id').value > 0) {
+				LogStep('step4a');
+				document.getElementById('instructions').value = document.getElementById('instructions-form').value;
+				if (document.getElementById('instructions').value) {
+					document.getElementById('instructions-receipt').innerHTML = document.getElementById('instructions-form').value;
+				} else {
+					document.getElementById('instructions-receipt').innerHTML = "NO INSTRUCTIONS. Thank you for keeping it simple.";
+				}
+				document.getElementById('address-receipt').innerHTML = document.getElementById('address').value;
+				document.getElementById('apartment-receipt').innerHTML = document.getElementById('apartment').value;
+				document.getElementById('zipcode-receipt').innerHTML = document.getElementById('zipcode').value;
+				document.getElementById('tips-receipt-price').innerHTML = "$" + document.getElementById('tips-form').value + ".00";
+				document.getElementById("already-link1").style.display = "none";
+				document.getElementById("already-link2").style.display = "none";
+				document.getElementById("already-link3").style.display = "none";
+				document.getElementById('signup-form').style.display = 'none';
+				document.getElementById('signup-form-logged-in').style.display = 'block';
+				document.getElementById('name-header').style.display = "none";
+				document.getElementById('address-header').classList.remove('not-visible');
+				if (!document.getElementById('address')) {
+					document.getElementById('address-header-main').innerHTML = document.getElementById('address-form').value;
+				} else {
+					document.getElementById('address-header-main').innerHTML = document.getElementById('address').value;
+				}
+				document.getElementById('exist-user-btn').classList.add('exist-user');
+				
+				
+				if(document.getElementById("referral_email").value == "corona_discount"){
+					setDiscount(15, "IM AFFECTED DISCOUNT 60% OFF ~ ");
+					document.getElementsByClassName("global-alert")[1].classList.add("alert-open");
+					document.getElementById('tip-header').innerHTML = 'Estimated price based on 23 lbs bag. It will be adjusted according to weight of the bag at $0.63 /lb';
+					document.getElementById("discount-receipt").innerHTML = "IM AFFECTED DISCOUNT 60% OFF";
+					document.getElementById("discount-receipt-total-price").innerHTML = "60% OFF";
+					document.getElementById("discount-receipt-price").innerHTML = "60% OFF";
+					document.getElementById("discount").value = "15";
+					document.getElementById("total_1").innerHTML = "$15";
+					document.getElementById("total_2").innerHTML = "$15";
+					document.getElementById("referral_email").value = "corona_discount";
+					document.getElementsByClassName('global-alert')[0].style.display = "none";
+					document.getElementById("already-link1").style.display = "none";
+					document.getElementById("already-link2").style.display = "none";
+					document.getElementById("already-link3").style.display = "none";
+				}
+				
+			} else {
+				document.getElementById('exist-user-btn').style.display = "none";
+			}
+			document.getElementById('washschedule').style.display = 'none';
+			document.getElementById('washaddress').style.display = 'none';
+			document.getElementById('washname').style.display = 'none';
+			document.getElementById('receiptpage').style.display = 'block';
+			document.getElementById('name-header').classList.remove('not-visible');
+			document.getElementById('personal-info-header').innerHTML = document.getElementById('firstname').value + " " + document.getElementById('lastname').value;
+			if(document.getElementById('time-start-receipt').innerHTML.includes(" pm") && document.getElementById('time-end-receipt').innerHTML.includes(" pm") && document.getElementById('time-start-receipt').innerHTML.includes("12")!==true && document.getElementById('time-end-receipt').innerHTML.includes("12")!==true){
+				//document.getElementsByClassName("global-alert")[2].classList.add("alert-open");
+			}
+			LogStep('step5a');
+		}
+		if(document.getElementById('total-extra-price').innerHTML == "$0.00"){
+		   document.getElementsByClassName('extras_receipt')[0].style.display = "none";
+		}
+		updateTotal();
+	}
+
+	function ScrollToTop() {
+		document.body.scrollTop = 0; // For Safari
+		document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+	}
+
+	function updateTotal() {
+        if (document.getElementById('service').value != 'maid') {
+			var extra_total = parseInt(document.getElementById('bag').value * 5) + parseInt(document.getElementById('clorox').value * 2) + parseInt(document.getElementById('sameday').value * 5);
+			var extra_total = parseInt(document.getElementById('sameday').value * 5);
+			var base = 30;
+			var cleaning_discount = 0;
+        } else {
+			var extra_total = 0;
+			var base = parseInt(document.getElementById('clean_total').value);
+			var cleaning_discount = parseInt(document.getElementById('cleaning_discount').value);
+		}
+        console.log("extra total " + extra_total);
+		if (extra_total > 0) {
+			document.getElementById('total-extra-price').innerHTML = "$" + extra_total + '.00';
+		} else {
+			document.getElementById('total-extra-price').innerHTML = "$0.00";
+		}
+		
+		var discount = parseInt(document.getElementById('discount').value);
+		var loyalty_discount = parseInt(document.getElementById('loyalty_discount').value);
+		if(discount==0 && loyalty_discount!=0 && document.getElementById('service').value != 'maid'){
+			var discount_new = (base + extra_total)*(loyalty_discount/100);
+			document.getElementById("discount-receipt").innerHTML = "Loyalty Discount " + loyalty_discount + "%";
+			document.getElementById("discount-receipt-total-price").innerHTML = "$" + parseInt(discount_new) + ".00";
+			document.getElementById("discount-receipt-price").innerHTML = "$" + parseInt(discount_new) + ".00";
+		} else {
+			if(document.getElementById('discount').value>0){
+				if(document.getElementById("discount-receipt").innerHTML != "First Order Discount"){
+					document.getElementById("discount-receipt").innerHTML = "WashyCare Credit";
+				}
+				document.getElementById("discount-receipt-price").innerHTML = "$" + discount + ".00";
+			} else {
+				document.getElementById("discount-receipt-price").innerHTML = "";
+			}
+			document.getElementById("discount-receipt-total-price").innerHTML = "$" + discount + ".00";
+			if(document.getElementById('service').value == 'maid' && cleaning_discount != 0){
+				document.getElementById("discount-receipt-total-price").innerHTML = "$" + parseInt(discount + cleaning_discount) + ".00";
+				document.getElementById("second-discount-receipt-price").innerHTML = "$" + cleaning_discount + ".00";
+				if(document.getElementById("maid_orders") && document.getElementById("maid_orders").value==0){
+					document.getElementById("second-discount-receipt").innerHTML = "First Order Discount";
+				} else {
+					document.getElementById("second-discount-receipt").innerHTML = "Subscription";
+				}
+			} else if(cleaning_discount == 0){
+				document.getElementById("discount-receipt-total-price").innerHTML = "$" + parseInt(discount + cleaning_discount) + ".00";
+				document.getElementById("second-discount-receipt-price").innerHTML = "";
+				document.getElementById("second-discount-receipt").innerHTML = "";
+			}
+		}
+		
+
+		if (!document.getElementById('tips').value) {
+			document.getElementById('tips').value = 0;
+		}
+		var tips = parseInt(document.getElementById('tips').value);
+		if (document.getElementById('service').value == 'dryclean') {
+			//console.log("updating Total as DryClean");
+			document.getElementById('tips-receipt-price').innerHTML = "$" + tips + ".00";
+			var dryclean_total = price();
+			var discount = parseFloat(document.getElementById("discount").value);
+			var tips = parseFloat(document.getElementById("tips").value);
+
+			document.getElementById('total').value = dryclean_total + extra_total - discount + tips;
+			//document.getElementById('total_1').innerHTML = parseInt(document.getElementById('total').value);
+			//document.getElementById('total_2').innerHTML = parseInt(document.getElementById('total').value);
+			//document.getElementById('total-receipt').innerHTML = "<b style=\"font-size:10px;\">$</b>" + parseInt(document.getElementById('total').value) + ".00";
+			//document.getElementById('subtotal-receipt').innerHTML = "$" + dryclean_total + ".00";
+			
+		} else if (document.getElementById('service').value == 'maid') {
+			//console.log("updating Total as Wash");
+			document.getElementById('tips-receipt-price').innerHTML = "$" + tips + ".00";
+			UpdateCleanTime();
+			return;
+		} else {
+			//console.log("updating Total as Wash");
+			if(discount==0 && loyalty_discount!=0){
+				document.getElementById('total').value = 30 + extra_total + tips - parseInt(discount_new); //30 + extra_total + tips - parseInt(discount_new);
+			} else {
+				document.getElementById('total').value = 30 + extra_total + tips - discount; //30 + extra_total + tips - discount;
+			}
+			//document.getElementById('total').value = 30 + extra_total + tips - discount;
+			document.getElementById('tips-receipt-price').innerHTML = "$" + tips + ".00";
+			//document.getElementById('total_1').innerHTML = parseInt(document.getElementById('total').value);
+			//document.getElementById('total_2').innerHTML = parseInt(document.getElementById('total').value);
+			//document.getElementById('total-receipt').innerHTML = "<b style=\"font-size:10px;\">$</b>" + document.getElementById('total').value + ".00";
+		}
+		document.getElementById('total_1').innerHTML = parseInt(document.getElementById('total').value);
+		document.getElementById('total_2').innerHTML = parseInt(document.getElementById('total').value);
+		document.getElementById('total-receipt').innerHTML = "<b style=\"font-size:10px;\">$</b>" + parseInt(document.getElementById('total').value) + ".00";
+		//console.log("updating Total END");
+	}
+
+	function price(z) {
+		var total = 0;
+		var items = 0;
+		var prices = [3, 7, 6, 15, 21, 18, 25, 6, 8, 8, 14, 5];
+		var names = ["Launder Shirt", "Pants", "Shirt", "2PC Suit", "3PC Suit", "Short Coat", "Coat", "Shorts / Skirt", "Sweater / Blouse", "Blazer", "Dress", "Scarf / Tie"];
+		document.getElementById("detergent-receipt").innerHTML = '';
+		if (z < 13) {
+			document.getElementById("count_" + z).innerHTML = parseInt(document.getElementById("count_" + z).innerHTML) + 1;
+		} else if (z >= 13) {
+			z = z - 12;
+			if (parseInt(document.getElementById("count_" + z).innerHTML) > 0) {
+				document.getElementById("count_" + z).innerHTML = parseInt(document.getElementById("count_" + z).innerHTML) - 1;
+			}
+		}
+		for (var i = 1; i < 13; i++) {
+			total = total + parseInt(document.getElementById("count_" + i).innerHTML) * prices[i - 1];
+			items = items + parseInt(document.getElementById("count_" + i).innerHTML);
+			if (document.getElementById("count_" + i).innerHTML > 0) {
+				document.getElementById("detergent-receipt").innerHTML += names[i - 1] + ' ' + document.getElementById("count_" + i).innerHTML + "<br>"
+			}
+		}
+		if (items == 0) {
+			items = "Express";
+			document.getElementById('detergent-receipt').innerHTML = "Express";
+			document.getElementById('clorox-bag-receipt').style.display = "none";
+		}
+		if (total < 30) {
+			total = 30;
+		}
+		document.getElementById("lshirt_count").value = document.getElementById("count_1").innerHTML;
+		document.getElementById("pants_count").value = document.getElementById("count_2").innerHTML;
+		document.getElementById("shirt_count").value = document.getElementById("count_3").innerHTML;
+		document.getElementById("2suit_count").value = document.getElementById("count_4").innerHTML;
+		document.getElementById("3suit_count").value = document.getElementById("count_5").innerHTML;
+		document.getElementById("34coat_count").value = document.getElementById("count_6").innerHTML;
+		document.getElementById("fullcoat_count").value = document.getElementById("count_7").innerHTML;
+		document.getElementById("shorts_count").value = document.getElementById("count_8").innerHTML;
+		document.getElementById("sweater_count").value = document.getElementById("count_9").innerHTML;
+		document.getElementById("jacket_count").value = document.getElementById("count_10").innerHTML;
+		document.getElementById("dress_count").value = document.getElementById("count_11").innerHTML;
+		document.getElementById("scarf_count").value = document.getElementById("count_12").innerHTML;
+
+		document.getElementById('wash_header_main').innerHTML = items;
+		return total;
+	}
+
+	function Process() {
+		document.getElementById('submit_btn1').style.display = "none";
+		document.getElementById('submit_btn2').style.display = "none";
+		document.getElementById('submit_btn3').style.display = "none";
+
+		function createUser(callback) {
+			var username = document.getElementById('username1').value;
+			var email = document.getElementById('email').value;
+			var password = document.getElementById('password1').value;
+			var phone = document.getElementById('phone').value;
+			var firstname = document.getElementById('firstname').value;
+			var lastname = document.getElementById('lastname').value;
+			var freebag = document.getElementById('freebag').value;
+			var address = document.getElementById('address').value;
+			var apartment = document.getElementById('apartment').value;
+			var zipcode = document.getElementById('zipcode').value;
+			var cardnumber = document.getElementById('CardNumber').value.replace(/\s+/g, '');
+			var cardtype = document.getElementById('cardtype').value;
+			var expiration = document.getElementById('expir').value;
+			var store_credit = document.getElementById('store_credit').value;
+			var signed_up = document.getElementById('signed_up').value;
+			var temporary = document.getElementById('tourist').value;
+			var order_service = document.getElementById('service').value;
+			//var source = document.getElementById('source').value;
+			var source = '';
+			var referral_email = document.getElementById('referral_email').value;
+
+
+			xmlhttp = new XMLHttpRequest();
+			xmlhttp.onreadystatechange = function() {
+				if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+					var str = xmlhttp.responseText;
+					if (str) {
+						if (str != 'good') {
+							document.getElementById('error-message1').innerHTML = str;
+							document.getElementById('error-message2').innerHTML = str;
+							document.getElementById('error-message3').innerHTML = str;
+							document.getElementById('submit_btn1').style.display = "inline-block";
+							document.getElementById('submit_btn2').style.display = "inline-block";
+							document.getElementById('submit_btn3').style.display = "inline-block";
+							var n = str.includes("that email is already in use.");
+							var m = str.includes("that phone");
+							if(n>0 || m>0)
+							{
+								document.getElementById('customer-login-ui').setAttribute('data-modal-state','open');
+							}
+							ScrollToTop();
+						} else {
+							var uid = 9999999;
+							callback(uid);
+						}
+					}
+				}
+			}
+
+			xmlhttp.open("POST.html", "new-registration-silent", true);
+			xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+			xmlhttp.send(encodeURI("service=register&password=" + password + "&firstname=" + firstname + "&lastname=" + lastname + "&phone=" + phone + "&username=" + username + "&email=" + email + "&freebag=" + freebag + "&signed_up=desktop&address=" + address + "&apartment=" + apartment + "&zipcode=" + zipcode + "&cardnumber=" + cardnumber + "&bankcard=" + cardtype + "&expiration=" + expiration + "&store_credit=" + store_credit + "&city=New York&signed_up=" + signed_up + "&source=" + source + "&referral_email=" + referral_email + "&temporary=" + temporary + "&order_service=" + order_service));
+
+		}
+
+		function sendOrder(uid) {
+			var timestart = document.getElementById('time-start').value;
+			var timeend = document.getElementById('time-end').value;
+			var tips = document.getElementById('tips').value;
+			var instructions = document.getElementById('instructions').value;
+			var lastname = document.getElementById('lastname').value;
+			var device = document.getElementById('device').value;
+			if (document.getElementById('service').value == 'wash') {
+				var bag = document.getElementById('bag').value;
+				var clorox = document.getElementById('clorox').value;
+				var detergent = document.getElementById('detergent').value;
+				var softener = document.getElementById('softener').value;
+			} else if (document.getElementById('service').value == 'maid') {
+				var bedrooms = document.getElementById('bedrooms').value;
+				var bathrooms = document.getElementById('bathrooms').value;
+				var clean_type = document.getElementById('clean_type').value;
+				var frequency = document.getElementById('frequency').value;
+				var extras_1 = document.getElementById('extras_var_1').value;
+				var extras_2 = document.getElementById('extras_var_2').value;
+				var extras_3 = document.getElementById('extras_var_3').value;
+				var pets = document.getElementById('pets').value;
+			} else {
+				var lshirt_count = document.getElementById("lshirt_count").value;
+				var pants_count = document.getElementById("pants_count").value;
+				var shirt_count = document.getElementById("shirt_count").value;
+				var suit_count2 = document.getElementById("2suit_count").value;
+				var suit_count3 = document.getElementById("3suit_count").value;
+				var coat_count34 = document.getElementById("34coat_count").value;
+				var fullcoat_count = document.getElementById("fullcoat_count").value;
+				var shorts_count = document.getElementById("shorts_count").value;
+				var sweater_count = document.getElementById("sweater_count").value;
+				var jacket_count = document.getElementById("jacket_count").value;
+				var dress_count = document.getElementById("dress_count").value;
+				var scarf_count = document.getElementById("scarf_count").value;
+			}
+			xmlhttp = new XMLHttpRequest();
+			xmlhttp.onreadystatechange = function() {
+				if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+					var str = xmlhttp.responseText;
+					if (str) {
+						var resp = JSON.parse(str);
+						if (resp.success == "true") {
+							document.getElementById('success-modal').setAttribute('data-modal-state', 'open');
+							document.getElementById('booking-flow-receipt-estimate').style.display = 'none';
+							document.getElementById('signup-form-logged-in').style.width = '100%';
+							document.getElementById('error-message1').innerHTML = 'Congratulations your order is all Set';
+							document.getElementById('error-message2').innerHTML = 'Congratulations your order is all Set';
+							document.getElementById('error-message3').innerHTML = 'Congratulations your order is all Set';
+							dataLayer.push({
+								'user_id': resp.user_id
+							});
+							LogStep('order-received');
+							console.log("order user " + resp.user_id);
+							//window.history.pushState({ path: newurl }, '', newurl);
+							//dataLayer.push({'event': 'order-received'});
+						} else {
+							document.getElementById('error-message1').innerHTML = resp.error;
+							document.getElementById('error-message2').innerHTML = resp.error;
+							document.getElementById('error-message3').innerHTML = resp.error;
+							document.getElementById('submit_btn1').style.display = "inline-block";
+							document.getElementById('submit_btn2').style.display = "inline-block";
+							document.getElementById("error-message1").scrollIntoView();
+						}
+					}
+				} else if (xmlhttp.status == 500) {
+					document.getElementById('error-message1').innerHTML = 'Oops. Something went wrong on our side. Ply try again later.';
+					document.getElementById('error-message2').innerHTML = 'Oops. Something went wrong on our side. Ply try again later.';
+					document.getElementById('error-message3').innerHTML = 'Oops. Something went wrong on our side. Ply try again later.';
+				}
+			}
+			if (document.getElementById('service').value == 'wash') {
+				
+				xmlhttp.open("POST.html", "mobile-order-total", true);
+				xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+				xmlhttp.send(encodeURI("user_id=" + uid + "&lastname=" + lastname + "&timestart=" + timestart + "&timeend=" + timeend + "&detergent=" + detergent + "&softener=" + softener + "&bag_vl=" + bag + "&clorox_vl=" + clorox + "&tips=" + tips + "&instructions=" + instructions + "&device=" + device));
+				
+			} else if (document.getElementById('service').value == 'maid') {
+				
+				xmlhttp.open("POST.html", "mobile-order-total-maid", true);
+				xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+				xmlhttp.send(encodeURI("user_id=" + uid + "&lastname=" + lastname + "&timestart=" + timestart + "&bedrooms=" + bedrooms + "&bathrooms=" + bathrooms + "&clean_type=" + clean_type + "&frequency=" + frequency + "&extras_1=" + extras_1 + "&extras_2=" + extras_2 + "&extras_3=" + extras_3 + "&pets=" + pets + "&tips=" + tips + "&instructions=" + instructions + "&device=" + device));
+			} else {
+				
+				xmlhttp.open("POST.html", "mobile-order-total-dry-cleaning", true);
+				xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+				xmlhttp.send(encodeURI("user_id=" + uid + "&lastname=" + lastname + "&timestart=" + timestart + "&timeend=" + timeend + "&tips=" + tips + "&instructions=" + instructions + "&lshirt_count=" + lshirt_count + "&pants_count=" + pants_count + "&shirt_count=" + shirt_count + "&2suit_count=" + suit_count2 + "&3suit_count=" + suit_count3 + "&34coat_count=" + coat_count34 + "&fullcoat_count=" + fullcoat_count + "&shorts_count=" + shorts_count + "&sweater_count=" + sweater_count + "&jacket_count=" + jacket_count + "&dress_count=" + dress_count + "&scarf_count=" + scarf_count + "&device=" + device));
+				
+			}
+		}
+		if (document.getElementById('user_id').value > 0) {
+			document.getElementById('submit_btn1').style.display = "none";
+			document.getElementById('submit_btn2').style.display = "none";
+			document.getElementById('submit_btn3').style.display = "none";
+			sendOrder(document.getElementById('user_id').value);
+		} else {
+			var creditcard1 = document.getElementById('CardNumber');
+			var exp1 = document.getElementById('expir');
+			//var cvv1 = document.getElementById('csc_code');
+			var firstname1 = document.getElementById('firstname');
+			var lastname1 = document.getElementById('lastname');
+			var email1 = document.getElementById('email');
+			var password1 = document.getElementById('password1');
+			var phone1 = document.getElementById('phone');
+			if (!creditcard1.value || !exp1.value || !firstname1.value || !lastname1.value || !email1.value || !password1.value || !phone1.value) {
+				if (!creditcard1.value) {
+					creditcard1.style.borderColor = 'red';
+				} else {
+					creditcard1.style.borderColor = '#dce1e5';
+				}
+				if (!exp1.value) {
+					exp1.style.borderColor = 'red';
+				} else {
+					exp1.style.borderColor = '#dce1e5';
+				}
+				if (!firstname1.value) {
+					firstname1.style.borderColor = 'red';
+				} else {
+					firstname1.style.borderColor = '#dce1e5';
+				}
+				if (!lastname1.value) {
+					lastname1.style.borderColor = 'red';
+				} else {
+					lastname1.style.borderColor = '#dce1e5';
+				}
+				if (!email1.value) {
+					email1.style.borderColor = 'red';
+				} else {
+					email1.style.borderColor = '#dce1e5';
+				}
+				if (!password1.value) {
+					password1.style.borderColor = 'red';
+				} else {
+					password1.style.borderColor = '#dce1e5';
+				}
+				if (!phone1.value) {
+					phone1.style.borderColor = 'red';
+				} else {
+					phone1.style.borderColor = '#dce1e5';
+				}
+				document.getElementById('submit_btn1').style.display = "inline-block";
+				document.getElementById('submit_btn2').style.display = "inline-block";
+				document.getElementById('submit_btn3').style.display = "inline-block";
+			} else {
+				creditcard1.style.borderColor = '#dce1e5';
+				exp1.style.borderColor = '#dce1e5';
+				//cvv1.style.borderColor = '#dce1e5';
+				firstname1.style.borderColor = '#dce1e5';
+				lastname1.style.borderColor = '#dce1e5';
+				email1.style.borderColor = '#dce1e5';
+				password1.style.borderColor = '#dce1e5';
+				phone1.style.borderColor = '#dce1e5';
+				//document.getElementById('submit_btn1').style.visibility = "hidden";
+				//document.getElementById('submit_btn2').style.visibility = "hidden";
+				createUser(sendOrder);
+			}
+		}
+	}
+
+	function checkZipcode() {
+		var zipcode = document.getElementById('zipcode-form').value;
+		var area = '';
+		if (!zipcode.includes("_")) { //10041,10075, 10105, 10118, 10122, 10111, 10121, 10131, 10133, 10152, 10153, 10154, 10166, 10167, 10169, 10172, 10211, 10213, 10280, 10281, 10282, 10271,
+			var zipcodes_ok = [10001, 10002, 10003, 10004, 10005, 10006, 10007, 10008, 10009, 10010, 10011, 10012, 10013, 10014, 10015, 10016, 10017, 10018, 10019, 10020, 10021, 10022, 10023, 10024, 10025, 10026, 10028, 10128, 10029, 10038, 10036, 10065, 10041,10075, 10081, 10105, 10107, 10118, 10120, 10122, 10111, 10120, 10121, 10131, 10133, 10138, 10152, 10153, 10154, 10166, 10167, 10169, 10172, 10211, 10213, 10280, 10281, 10282, 10271, 11251, 11201, 11206, 11231, 11217, 11225, 11238, 11216, 11215, 11211, 11206, 11249, 11205, 11222]; //, 11251, 11201, 11206, 11231, 11217, 11238, 11216, 11225, 11215, 11211, 11206, 11249
+			for (var i = 0; i <= zipcodes_ok.length; i++) {
+				if (zipcode == zipcodes_ok[i]) {
+					area = 'good';
+					break;
+				}
+			}
+			if (area == 'good') {
+				document.getElementById('zipcode_alert').innerHTML = '';
+				document.getElementById('zipcode_alert').style.display = "none";
+				document.getElementById('zipcode-form').style.borderColor = '#dce1e5';
+				document.getElementById('zipcode-form').style.color = '#16374b';
+				document.getElementById('submit_btn1').style.display = "inline-block";
+				document.getElementById('submit_btn2').style.display = "inline-block";
+				document.getElementById('submit_btn3').style.display = "inline-block";
+				return;
+			} else {
+				document.getElementById('zipcode_alert').innerHTML = 'sorry you are outside of our <span style="text-decoration: underline; cursor: pointer;" onclick="document.getElementById(\'service-area-modal\').setAttribute(\'data-modal-state\',\'open\')">service area</span>';
+				document.getElementById('zipcode_alert').style.display = "block";
+				document.getElementById('zipcode-form').style.borderColor = 'red';
+				document.getElementById('zipcode-form').style.color = 'red';
+				document.getElementById('submit_btn1').style.display = "none";
+				document.getElementById('submit_btn2').style.display = "none";
+				document.getElementById('submit_btn3').style.display = "none";
+				ZipcodeLogs(zipcode);
+			}
+		}
+	}
+
+	function PopToStep(step) {
+		document.getElementById('washorder').style.display = 'none';
+		document.getElementById('washschedule').style.display = 'none';
+		document.getElementById('washaddress').style.display = 'none';
+		document.getElementById('washname').style.display = 'none';
+		document.getElementById('receiptpage').style.display = 'none';
+		document.getElementById(step).style.display = 'block';
+		document.getElementsByClassName('booking-steps')[0].classList.remove('active');
+	}
+    </script>
+	
+    </head>
+<body data-state='generic' >
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WBQ4DT5"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	
+	<style>
+		.red p.wlpeMessageText {
+        	color:red !important;
+        	font-weight:bold !important;
+		}
+		#washname{
+			min-height:650px;
+		}
+		@media screen and (max-width:639px){
+			#washorder, #washschedule, #washaddress, #washname{
+				height: 100% !important;
+			}
+			.content-receipt span {
+				line-height: 20px;
+			}
+			.booking-step{
+				height: auto !important;
+			}
+			.time-wrapper{
+				margin-top: 10px !important;
+			}
+			.bh-title{
+				padding-top: 10px !important;
+			}
+			#address-header-main, #name-header, #wash_header_main, #personal-info-header{
+				margin-top:20px;
+			}
+		}
+		@media screen and (min-width:639px){
+			#washorder, #washschedule, #washaddress, #washname{
+				position: relative;
+				top: 50%;
+				/*left: 0%;*/
+				transform: translate(0%, -50%);
+				max-height: 100%;
+			}
+			
+			#signup-form .content-booking-flow-section{
+				margin: auto !important;float: none !important;position: relative;top: 30%;transform: translate(0%, -30%);
+				/*top:10%;*/
+			}
+			.content-receipt span {
+				line-height: 30px;
+			}
+			.exist-user {
+				display:block !important;
+			}
+		}
+		@media screen and (min-width:639px) and (max-width:850px){
+			.logo-phone-number{
+				display:none;
+			}
+		}
+	</style>
+
+	<style>
+	.modal{
+		top: 50% !important; 
+		left: 50% !important; 
+		transform: translate(-50%, -50%) !important; 
+		max-width: 600px !important; 
+		width: 100% !important;  
+		position: absolute !important; 
+		margin: 0 !important;
+		}
+	</style>
+	<script>
+		function getCookie(name) {
+			var nameEQ = name + "=";
+			var ca = document.cookie.split(';');
+			for(var i=0; i < ca.length; i++) {
+				var c = ca[i];
+				while (c.charAt(0)==' ') c = c.substring(1,c.length);
+				if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+			}
+			return null;
+		}
+		
+		var mouseX = 0;
+		var mouseY = 0;
+		var popupCounter = 0;
+		document.addEventListener("mousemove", function(e) {
+			mouseX = e.clientX;
+			mouseY = e.clientY;
+			//document.getElementById("universe").innerHTML = "<br />X: " + e.clientX + "px<br />Y: " + e.clientY + "px";
+		});
+		
+		$(document).mouseleave(function () {
+			if (mouseY < 100) {
+				var user_exit_popup = getCookie('user_exit_popup');
+				if (user_exit_popup!=1) {
+					console.log("Please don't close the tab!");
+					document.getElementById('exit-modal').setAttribute('data-modal-state','open')
+				}
+				popupCounter ++;
+				var date = new Date();
+				date.setTime(date.getTime() + (1*60*60*1000));
+				expires = "expires=" + date.toUTCString();
+				document.cookie = "user_exit_popup="+1+"; "+expires;
+			}
+		});
+		
+	</script>
+	
+	<script>
+	  		function loginSilent(step){
+				var username = document.getElementById("username").value;
+                var password = document.getElementById("password").value;
+				document.getElementById("button-silent-login").style.visibility = "hidden";
+				
+                xmlhttp=new XMLHttpRequest();
+				xmlhttp.onreadystatechange=function(){
+					if (xmlhttp.readyState==4 && xmlhttp.status==200)
+					{
+						var str = xmlhttp.responseText;
+						if(str){
+							var m = str.includes("user_id");
+							if(m>0){
+								var cont$ = $("#user_container");
+								cont$.html(str);
+								document.getElementById("customer-login-ui").setAttribute("data-modal-state","close");
+								if(parseInt(document.getElementById('login-step').value)==2){
+									//LogStep('step4a');
+								}
+								document.getElementById("already-link1").style.display = "none";
+								document.getElementById("already-link2").style.display = "none";
+								document.getElementById("already-link3").style.display = "none";
+								document.getElementById("error-message1").innerHTML = "";
+								document.getElementById("error-message2").innerHTML = "";
+								document.getElementById("error-message3").innerHTML = "";
+								document.getElementById("address-receipt").innerHTML = document.getElementById("address").value;
+								document.getElementById("apartment-receipt").innerHTML = document.getElementById("apartment").value;
+								document.getElementById("zipcode-receipt").innerHTML = document.getElementById("zipcode").value;
+								document.getElementsByClassName("global-alert")[0].classList.remove("alert-open");
+								updateTotal();
+								toWashReceipt();
+							} else {
+								document.getElementById("error-message-login").innerHTML = str;
+								document.getElementById("button-silent-login").style.visibility = "visible";
+							}
+						}
+					} else if(xmlhttp.status==500){
+						document.getElementById("error-message-login").innerHTML = "Oops. Something went wrong on our side. Ply try again later.";
+					}
+				}
+				xmlhttp.open("POST.html","silent-login-checkout",true);
+				xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded"); 
+				xmlhttp.send(encodeURI("username="+username+"&password="+password+"&service=login"));
+            }
+			
+	  </script>
+	
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WBQ4DT5"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	
+	<div id="customer-login-ui" class="modal-bk" data-modal="user-login">
+		<div class="modal-close js-close-modal hide-on-phone" onclick="document.getElementById('customer-login-ui').setAttribute('data-modal-state','closed')">
+			<img class="svg" src="images/modal-close.svg" alt="order laundry window" />
+		</div>
+		<div class="modal">
+			<div class="modal-close js-close-modal only-on-phone" onclick="document.getElementById('customer-login-ui').setAttribute('data-modal-state','closed')">
+				<img class="svg" src="images/modal-close.svg" alt="order laundry window" style="filter: invert(.5);">
+			</div>
+			<div class="modal-header">
+				<img class="svg" src="images/waves.svg" alt="clean clothes" />
+				<h2 id="success_message">Welcome back</h2>
+				<h3 class="modal-sub-header">Ready to have more free time?</h3>
+				<h3 id="error-message-login" class="error" style="color: red;"></h3>
+			</div>
+			<div class="modal-body">
+
+				<form id="form-silent-login" novalidate onsubmit="event.preventDefault(); loginSilent();">
+
+					<div class="input-group">
+					</div> <!-- End of input Group -->
+
+					<div class="input-group">
+						<label for="username">Email / Username</label>
+						<input id="username" type="email" name="username" required="true" tabindex="1">
+					</div>
+
+					<div class="input-group">
+						<label for="password" tabindex="-1">Password
+							<a href="sign-in871c.html?service=forgot" class="forgot-password-link float-right">Forgot Password?</a></label>
+						<input id="password" type="password" name="password" required="true" tabindex="1">
+					</div>
+
+
+				<div class="input-group center">
+					<button type="submit" id="button-silent-login" class="modal-btn" tabindex="1" name="service" value="login">Sign In</button>
+				</div>
+				<a href="#sign-up" class="js-open-modal grey" data-open-modal='user-signup' style="display:none;" >New Member? Sign Up</a>
+
+				</form>
+
+			</div> <!-- End of Modal-body -->
+		</div>
+	</div>
+
+	<div id="exit-modal" class="modal-bk" data-modal="user-login">
+		<div class="modal-close js-close-modal" onclick="document.getElementById('exit-modal').setAttribute('data-modal-state','closed')">
+			<img class="svg" src="images/modal-close.svg" alt="order laundry window" />
+		</div>
+		<div class="modal" style="">
+			<div class="modal-header">
+				<img class="svg" style="width: 75px; padding-bottom: 10px;" src="images/beach.svg" alt="laundry discount" />
+				<h2 id="success_message" style="line-height:1.2;">Want to cross laundry off your list for good?</h2>
+				<h3 class="modal-sub-header" style="font-size: 16px;padding: 0 30px;color: #9ca1ab;">Order Today and get $10 discount.</h3>
+			</div>
+			<div class="modal-body">
+
+				<form action="https://www.WashyCare.com/order-page?service=wash&amp;day-start=0&amp;day-end=0" method="post" novalidate>
+					<div class="input-group center">
+						<button type="submit" class="modal-btn" tabindex="1" name="service" value="login">Get $10 Discount</button>
+					</div>
+					<h3 class="modal-sub-header" style="font-size: 16px;padding: 0 30px;color: #16374b;margin: 5px;font-family: BrownStd;margin: auto;text-align: center;">or <br> Call: 917-603-4617</h3>
+
+				</form>
+
+			</div> <!-- End of Modal-body -->
+		</div>
+	</div>
+	
+<div id="quality-checklist" class="modal-bk" data-modal="quality-checklist" data-modal-state="closed">
+		<div class="modal-close js-close-modal hide-on-phone" onclick="document.getElementById('quality-checklist').setAttribute('data-modal-state','closed')">
+			<img class="svg" src="images/modal-close.svg" alt="order laundry window">
+		</div>
+		<div class="modal" style="width: 85vw !important;max-width: 1000px !important;max-height: 90vh;overflow: auto;padding: 0;">
+			<div class="modal-close js-close-modal only-on-phone" onclick="document.getElementById('quality-checklist').setAttribute('data-modal-state','closed')" style="z-index: 9; height: 40px; width: 40px; right: 10px; top: 10px;">
+			<img class="svg" src="images/modal-close-gray.png" alt="order laundry window" style="width: 100%; height: 100%;">
+		</div>
+			<div id="checklist" data-active-clean="standard" class="checklist-wrapper" style="padding-top: 20px;">
+         <h3 style="padding-bottom:20px;">Our quality checklist</h3>
+         <div class="checklist-items clear" style="margin-top:30px;margin: 10px 20px 10px 30px;">
+            <h2>Standard</h2>
+            <div class="group">
+               <h4>Everywhere</h4>
+               <ul>
+                  <li class="visible"> Lighting fixtures</li>
+                  <li class="visible"> Vents</li>
+                  <li class="visible"> TV &amp; other monitors</li>
+                  <li class="visible"> Fans<sup>1</sup></li>
+                  <li class="visible"> Door frames</li>
+                  <li class="visible"> Picture frames</li>
+                  <li class="visible"> Tables &amp; chairs</li>
+                  <li class="visible"> Shelves</li>
+                  <li class="visible"> Blinds<sup>1</sup></li>
+                  <li class="visible">Trash cans (exterior)</li>
+                  <li class="visible">Window sills</li>
+                  <li class="visible">Under A/C unit</li>
+                  <li class="visible">Change bedding<sup>2</sup>, make beds</li>
+                  <li class="visible">Empty trash, replace liners</li>
+               </ul>
+            </div>
+            <div class="group">
+               <h4>Floors</h4>
+               <ul>
+                  <li class="visible">Vacuum (if provided)</li>
+                  <li class="visible">Dry mopping</li>
+                  <li class="visible">Wet mopping</li>
+               </ul>
+            </div>
+            <div class="group">
+               <h4>Kitchen</h4>
+               <ul>
+                  <li class="visible">Kitchen counters</li>
+                  <li class="visible">Kitchen cabinets<sup>1</sup> (exterior)</li>
+                  <li class="visible">Refrigerator (exterior)</li>
+                  <li class="visible">Stovetop</li>
+                  <li class="visible">Wall behind stovetop</li>
+                  <li class="visible">Kitchen sink</li>
+                  <li class="visible">Microwave (inside &amp; out)</li>
+                  <li class="visible">Toaster (inside &amp; out)</li>
+                  <li class="visible">Load &amp; run dishwasher (1 load) or Empty dishwasher if client left note</li>
+               </ul>
+            </div>
+            <div class="group">
+               <h4>Bathroom</h4>
+               <ul>
+                  <li class="visible">Bathroom counters</li>
+                  <li class="visible">Bathroom shelves (exterior)</li>
+                  <li class="visible">Shower door (light clean)</li>
+                  <li class="visible">Shower caddy/ soap dish</li>
+                  <li class="visible">Bathroom mirror</li>
+                  <li class="visible">Bathtub/shower (light clean)</li>
+                  <li class="visible">Bathroom tiles (light clean)</li>
+                  <li class="visible">Bathroom sinks (light clean)</li>
+                  <li class="visible">Toilet</li>
+               </ul>
+            </div>
+            <div class="group">
+               <h2 class="premium">Premium</h2>
+               <ul>
+                  <li class="visible premium">Heavy scrub of bathtub/shower</li>
+                  <li class="visible premium">Heavy scrub of bathroom tiles</li>
+                  <li class="visible premium">Heavy scrub of bathroom sinks</li>
+                  <li class="visible premium">Stain removal</li>
+                  <li class="visible premium">Wipe down baseboards</li>
+                  <li class="visible premium">Trashcans (inside &amp; out)</li>
+                  <li class="visible premium">Shelves</li>
+				  <li class="visible premium">Baseboards</li>
+                  <li class="visible premium">Blinds<sup>1</sup></li>
+				   
+               </ul>
+            </div>
+            <div class="group" style="margin-bottom: 10px;">
+               <h2 class="deep">Deep</h2>
+               <ul>
+                  <li class="visible deep">Extended time for areas of focus</li>
+                  <li class="visible deep">Inside oven</li>
+                  <li class="visible deep">Inside refrigerator</li>
+                  <li class="visible deep">Inside cabinets</li>
+               </ul>
+            </div>
+         </div>
+         <div class="asterisk">
+            <ol style="margin-bottom: 0;">
+               <li>Areas of focus must have standard accessibility and step stool</li>
+               <li>Fresh bedding/linen must be placed ontop of the bed.</li>
+            </ol>
+         </div>
+      </div>
+		</div>
+	</div>	
+	
+<div class="global-alert" >
+	<div class="alert-close js-close-alert" onclick="document.getElementsByClassName('global-alert')[0].classList.remove('alert-open');">
+		<span></span>
+		<span></span>
+	</div>
+	<div class="alert-contents">
+		<div class="icon">
+			<img src="images/diamonds-white.svg" alt="alert-icon">
+		</div>
+		<div class="txt">
+			<h4 class="alert-title">Your Personal Discount</h4>
+			<p class="alert-message">A $<span id="discount-number">10</span> discount will be added to your first 2 orders during checkout for non-hotel customers.</p>
+		</div>
+	</div>
+</div>
+	
+<div class="global-alert" style="background-color: red;">
+	<div class="alert-close js-close-alert" onclick="document.getElementsByClassName('global-alert')[1].classList.remove('alert-open');">
+		<span></span>
+		<span></span>
+	</div>
+	<div class="alert-contents">
+		<div class="icon">
+			<img src="images/diamonds-white.svg" alt="alert-icon">
+		</div>
+		<div class="txt">
+			<h4 class="alert-title">I'm Affected Discount</h4>
+			<p class="alert-message">A <span id="discount-number2">60% OFF</span> discount will be added to your order during checkout for non-hotel customers.
+			Please ONLY use this discount if you are affected and can NOT afford paying our prices.</p>
+		</div>
+	</div>
+</div>
+	
+<div class="global-alert" style="background-color: green;"> <!--WE NEED YOUR HELP-->
+	<div class="alert-close js-close-alert" onclick="document.getElementsByClassName('global-alert')[2].classList.remove('alert-open');">
+		<span></span>
+		<span></span>
+	</div>
+	<div class="alert-contents">
+		<div class="icon">
+			<img src="images/diamonds-white.svg" alt="alert-icon">
+		</div>
+		<div class="txt">
+			<h4 class="alert-title">We Need Your Help</h4>
+			<p class="alert-message">Due to high evening demand.
+			Please choose morning pickup/dropoff when possible, to provide better work conditions to our drivers.</p>
+		</div>
+	</div>
+</div>
+
+<div class="global-alert" >
+	<div class="alert-close js-close-alert" onclick="document.getElementsByClassName('global-alert')[3].classList.remove('alert-open');">
+		<span></span>
+		<span></span>
+	</div>
+	<div class="alert-contents">
+		<div class="icon">
+			<img src="images/diamonds-white.svg" alt="alert-icon">
+		</div>
+		<div class="txt">
+			<h4 class="alert-title">Your Personal Discount</h4>
+			<p class="alert-message">A $<span id="discount-number">40</span> discount will be added to your first home cleaning order during checkout.</p>
+		</div>
+	</div>
+</div>	
+	
+    <!-- All modals -->
+    <div id="success-modal" class="modal-bk" data-modal="basic-modal">
+        <!-- <div class="modal-close js-close-modal">
+            <img class="svg" src="/public/images/modal-close.svg">
+        </div> -->
+        <div id="modal-info-clean-type" class="modal">
+            <div class="modal-header">
+                <img class="svg" src="images/diamonds.svg">
+                <h2>Success!</h2>
+            </div>
+            <div class="modal-body">
+                <div class="content">
+                    <p>Your order has been booked. We will send an email confirmation shortly.</p>
+                    <p>Please add the following email to your contact list:
+						<nobr><a href="mailto:info@WashyCare.com">info@WashyCare.com</a></nobr></p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="input-group center">
+					<a class="button modal-btn js-close-modal" href="index.html">Done</a>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	
+	<div id="service-area-modal" class="modal-bk" data-modal="user-login" data-modal-state="closed">
+		<!--<div class="modal-close js-close-modal" onclick="document.getElementById('service-area-modal').setAttribute('data-modal-state','closed')">
+			<img class="svg" src="https://www.WashyCare.com/images/modal-close.svg" alt="order laundry window">
+		</div>-->
+		<div class="modal">
+			<div class="modal-close js-close-modal" onclick="document.getElementById('service-area-modal').setAttribute('data-modal-state','closed')">
+				<img class="svg" src="images/modal-close.svg" alt="order laundry window" style="filter: invert(.5);">
+			</div>
+			<div class="modal-header">
+				<img class="svg" src="images/waves.svg" alt="clean clothes">
+				<h2 id="success_message">WashyCare Service Area</h2>
+				<h3 class="modal-sub-header" style="font-size: 15px;">We are constantly expanding! If we don't serve your area now, please check again soon. <!--<br> We are temporarily not servicing brooklyn due to COVID-19.--></h3>
+			</div>
+			<div class="modal-body">
+
+				<form method="post" novalidate="">
+
+					<iframe src="https://www.google.com/maps/d/embed?mid=1XvT1Qm4LbxycLJZTN8kBA1SJXu_TgU0u" style="border:0; width: 100%; min-height: 400px;"></iframe>
+
+				</form>
+
+			</div> <!-- End of Modal-body -->
+		</div>
+	</div>
+    <!-- end of all Modals -->
+
+    <div class="booking-header clear ">
+	<div class="booking-header-content">
+
+		<div class="bh-mm-back hidden">
+			<span class="js-back-button">
+				<img src="images/cta-arrow-navy.svg" alt="">
+	      	</span>
+		</div>
+
+		<div class="bh-mm-logo only-on-phone">
+			<a href="index.html" title="WashyCare Cleaners">
+		        <img src="assets/templates/eflaundry/images/logo/logo_2020.png" style="width:50px; height:50px;" alt="WashyCare Cleaners">
+	      	</a>
+		</div>
+		<h6 class="only-on-phone" style="margin: 0; color:#a8acae; font-size: 14px; float: left; margin-top: 23px; margin-left: 20px;">917-603-4617</h6>
+
+		<div class="booking-steps">
+
+			<div class="booking-step-mm clear only-on-phone">
+				<div class="bh-mm-text">
+					<h5>WashyCare Cleaners</h5>
+				</div>
+
+				<div class="bh-mm-close js-bh-mm-btn" onclick="var element1 = document.getElementsByClassName('booking-steps')[0];if(element1.classList.contains('active')){element1.classList.remove('active');} else {element1.classList.add('active');}">
+					<img src="images/up-arrow-blue.svg" alt="">
+				</div>
+			</div>
+			<!-- End of booking-step-mm -->
+
+			<div class="booking-step booking-step-logo clear">
+				<a href="index.html" title="WashyCare Cleaners">
+			        <img src="assets/templates/eflaundry/images/logo/logo_2020.png" alt="WashyCare Cleaners">
+		      	</a>
+				<h6 class="logo-phone-number" style="margin: 0;color:#a8acae;font-size: 10px;">917-603-4617</h6>
+			</div>
+			<!-- end of booking-step-logo  -->
+
+			<!--<div class="booking-step booking-step-bedroom clear" style="-webkit-flex: 0.6; flex: 0.6;">
+				<span id="service_header" class="room_bedroom-display bh-main">Wash & Fold</span>
+				<span class="bh-title">Service</span>
+			</div>-->
+			<!-- end of booking-step-supplies  -->
+
+			<div id="wash-header" class="booking-step booking-step-clean clear not-visible" style="-webkit-flex: 0.5; flex: 0.5;" onclick="PopToStep('washorder');">
+				<span id="wash_header_main" class="room_bath-display bh-main">Tide</span>
+				<span id="wash_header_sub" class="bh-title">Supplies</span>
+			</div>
+			<!-- end of booking-step-dates  -->
+            
+            <div id="bedrooms-header" class="booking-step booking-step-clean clear not-visible" style="display:none; -webkit-flex: 0.5; flex: 0.5;" onclick="PopToStep('washorder');">
+				<span id="bedrooms_header_main" class="room_bath-display bh-main" style="font-size:24px;">Studio</span>
+				<span id="bedrooms_header_sub" class="bh-title">bedroom</span>
+			</div>
+			<!-- end of booking-step-dates  -->
+            
+            <div id="bathrooms-header" class="booking-step booking-step-clean clear not-visible" style="display:none; -webkit-flex: 0.5; flex: 0.5;" onclick="PopToStep('washorder');">
+				<span id="bathrooms_header_main" class="room_bath-display bh-main"  style="font-size:24px;">1</span>
+				<span id="bathrooms_header_sub" class="bh-title">bathroom</span>
+			</div>
+            
+            <!-- end of booking-step-dates  -->
+
+			<div id="clean_type-header" class="booking-step booking-step-clean clear not-visible" style="display:none;" onclick="PopToStep('washorder');">
+				<div class="time-wrapper">
+					<span id="clean_type-time-header" class="booking-time-estimate bh-note">~2 hours</span>
+				</div>
+				<span id="clean_type_header_main" class="service_id-display bh-main">Standard</span>
+				<span class="bh-title">Clean Type</span>
+			</div>
+            
+			<!-- end of booking-step-dates  -->
+
+			<div id="starting-header" class="booking-step booking-step-clean clear not-visible" style="display:none;" onclick="PopToStep('washschedule');">
+				<div class="time-wrapper">
+					<span id="starting-time-header" class="booking-time-estimate bh-note"></span>
+				</div>
+				<span id="starting-day-header" class="service_id-display bh-main"></span>
+				<span class="bh-title">Starting</span>
+			</div>
+			
+			<div id="pickup-header" class="booking-step booking-step-clean clear not-visible" onclick="PopToStep('washschedule');">
+				<div class="time-wrapper">
+					<span id="pickup-time-header" class="booking-time-estimate bh-note"></span>
+				</div>
+				<span id="pickup-day-header" class="service_id-display bh-main"></span>
+				<span class="bh-title">Pickup</span>
+			</div>
+			
+            <div id="dropoff-header" class="booking-step booking-step-clean clear not-visible" onclick="PopToStep('washschedule');">
+				<div class="time-wrapper">
+					<span id="dropoff-time-header" class="booking-time-estimate bh-note"></span>
+				</div>
+				<span id="dropoff-day-header" class="service_id-display bh-main"></span>
+				<span class="bh-title">Delivery</span>
+			</div>
+
+			<!-- end of booking-step-address -->
+
+			<div id="address-header" class="booking-step booking-step-address booking-step-clean clear not-visible" style="-webkit-flex: 1.15; flex: 1.15;" onclick="PopToStep('washaddress');">
+				<span id="address-header-main" class="location_address_1-display bh-main"></span>
+				<span class="bh-title">Address</span>
+			</div>
+			<!-- end of booking-step-address  -->
+			
+			<div id="name-header" class="booking-step booking-step-clean clear clear not-visible" style="-webkit-flex: 0.6; flex: 0.6;" onclick="PopToStep('washname');">
+				<span id="personal-info-header" class="room_bedroom-display bh-main" style="line-height:25px;"></span>
+				<span class="bh-title">Name</span>
+			</div>
+			<!-- end of booking-step-personal information-->
+
+			<div class="booking-step-mm-subtotal only-on-phone booking-step-subtotal">
+				<span id="total_1" class="estimate-amount price" style="display: inline;">30</span>
+				<span class="bh-title">Estimate</span> <!--Subtotal-->
+			</div>
+		</div>
+		<!-- end of booking-steps -->
+
+		<!-- end of price -->
+		<div class="bh-mm-btn js-bh-mm-btn only-on-phone " onclick="var element1 = document.getElementsByClassName('booking-steps')[0];if(element1.classList.contains('active')){element1.classList.remove('active');} else {element1.classList.add('active');}">
+			<img src="images/down-arrow-white.svg" alt="">
+		</div>
+		<div class="bh-mm-payment-btn js-bh-mm-payment-btn only-on-phone hidden">
+			Payment
+		</div>
+		<div class="tooltip-parent">
+			<div class="bh-price clear">
+				<img src="images/info.svg">
+				<span id="total_2" class="estimate-amount price" style="display: block;">30</span>
+				<span class="bh-title">Estimate</span> <!--Subtotal-->
+			</div>
+			<div class="tooltip price-tip">
+				<div id="tip-header" class="tooltip-content">Estimated price based on 18 lbs bag before extras. It will be adjusted according to weight of the bag at $1.59 /lb.</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+    <div id="universe">
+      <!-- <div class="main-content"> -->
+    <section class="page-booking-flow clear" style="height: 100%; display: block; position: absolute; width: 100%;">
+    <div id="sign-up-flow" class="content-booking-flow clear" style="height: calc(100% - 110px);">
+        <div id="washorder" class="booking-flow-section clear" style="max-width: 1200px; margin: auto;">
+    		<div id="wash_order" class="content-booking-flow-section" style="visibility: hidden;">
+				<div class="section-title clear">
+					<h2 id="order-title-1">Let's Choose Supplies</h2>
+				</div>
+				<form action="https://www.WashyCare.com/" method="get" accept-charset="utf-8">
+
+					<div class="input-group ">
+						<label>Detergent</label>
+						<div id="detergents_list" class="mc-radio-group">
+							<div id="detergent_0" class="mc-radio js-mc-radio active" onclick="WashOrder(0)">Tide</div>
+							<div id="detergent_1" class="mc-radio js-mc-radio" onclick="WashOrder(1)">Arm & Hammer</div>
+							<div id="detergent_2" class="mc-radio js-mc-radio" onclick="WashOrder(2)" data-time="scent free">Seventh Generation</div>
+						</div>
+					</div>
+					<!-- END OF INPUT GROUP -->
+
+					<div class="input-group">
+						<label>Softener</label>
+						<div id="softener_list" class="mc-radio-group">
+							<div id="supply_3" class="mc-radio js-mc-radio" onclick="WashOrder(3)">Downy</div>
+							<div id="supply_4" class="mc-radio js-mc-radio" onclick="WashOrder(4)">Bounce Sheets</div>
+							<div id="supply_5" class="mc-radio js-mc-radio" onclick="WashOrder(5)">Downy Free Sensitive</div>
+						</div>
+					</div>
+					<!-- END OF INPUT GROUP -->
+
+					<div class="input-group clear">
+						<label class="js-open-modal" data-open-modal="clean-information">Additional  <img class="svg" src="images/question.svg"></label>
+						<div id="additional_list" class="mc-radio-group mc-radio-group-spaced mc-radio-clean-type">
+							<div id="supply_6" class="time-estimate-data mc-radio js-mc-radio" data-time="+$2" onclick="WashOrder(6)">
+								<span class="hide-on-phone">Bleach  Whites</span>            
+								<div class="only-on-phone">
+									<span>Bleach  Whites <span class="grey">|  <span class="time-estimate-6">+$2</span></span></span>
+									<p>For those times when your whites don't look white anymore.</p>
+								</div>
+							</div>
+							<div id="supply_7" class="time-estimate-data mc-radio js-mc-radio" data-time="+$5" onclick="WashOrder(7)">
+								<span class="hide-on-phone">WashyCare Laundry bag</span>
+								<div class="only-on-phone">
+									<span>WashyCare Laundry bag <span class="grey">|  <span class="time-estimate-13">+$5</span></span></span>
+									<p>Receive your laundry packed into additional WashyCare bag on delivery.</p>
+								</div>            
+							</div>
+						</div>    			
+					</div>
+					<!-- END OF INPUT GROUP -->
+					<!--<p style="text-align:center">Additional: <br>Comforter - $20 | Blanket - $10 | Pillow - $8</p>-->
+				</form>
+				<div class="input-group center mt4 mb4 clear only-on-phone" style="margin: 0px auto !important;position: -webkit-sticky;position: sticky;bottom:0; display: block;float: none !important;clear: both;">			
+							<button class="form-btn active green  large-center" onclick="toWashSchedule();" style="width: 100%;">Next</button>		
+						</div>
+				<div class="input-group center mt4 mb4 clear hide-on-phone">
+					<button class="form-btn active green large-center js-step" onclick="toWashSchedule();">Next</button>
+				</div>
+			</div>
+
+			
+			<div id="maid_order" class="content-booking-flow-section" style="visibility: visible; display:none;">
+				<div class="section-title clear">
+					<h2 id="order-title-1">Booking a Home Cleaning</h2>
+				</div>
+				<form action="https://www.WashyCare.com/" method="get" accept-charset="utf-8">
+
+					<div class="input-group" style="margin-bottom: 25px;">
+						<label>Number of Bedrooms</label>
+						<div id="bedrooms_list" class="mc-radio-group">
+							<div id="bedrooms_0" class="mc-radio js-mc-radio active" onclick="MaidOrder('bedrooms', 0)">Studio</div>
+							<div id="bedrooms_1" class="mc-radio js-mc-radio" onclick="MaidOrder('bedrooms',1)">1</div>
+							<div id="bedrooms_2" class="mc-radio js-mc-radio" onclick="MaidOrder('bedrooms',2)">2</div>
+                            <div id="bedrooms_3" class="mc-radio js-mc-radio" onclick="MaidOrder('bedrooms',3)">3</div>
+							<div id="bedrooms_4" class="mc-radio js-mc-radio" onclick="MaidOrder('bedrooms',4)">4</div>
+                            <div id="bedrooms_5" class="mc-radio js-mc-radio" onclick="MaidOrder('bedrooms',5)">5</div>
+						</div>
+					</div>
+                    
+					<!-- END OF INPUT GROUP -->
+
+					<div class="input-group" style="margin-bottom: 25px;">
+						<label>Number of bathrooms</label>
+						<div id="bathrooms_list" class="mc-radio-group">
+							<div id="bathrooms_1" class="mc-radio js-mc-radio active" onclick="MaidOrder('bathrooms',1)">1</div>
+							<div id="bathrooms_2" class="mc-radio js-mc-radio" onclick="MaidOrder('bathrooms',2)">2</div>
+                            <div id="bathrooms_3" class="mc-radio js-mc-radio" onclick="MaidOrder('bathrooms',3)">3</div>
+							<div id="bathrooms_4" class="mc-radio js-mc-radio" onclick="MaidOrder('bathrooms',4)">4</div>
+                            <div id="bathrooms_5" class="mc-radio js-mc-radio" onclick="MaidOrder('bathrooms',5)">5</div>
+						</div>
+					</div>
+                    
+					<!-- END OF INPUT GROUP -->
+
+					<div class="input-group clear">
+						<label class="js-open-modal" data-open-modal="clean-information" style="cursor:pointer;" onclick="document.getElementById('quality-checklist').setAttribute('data-modal-state','open')">Cleaning Types  <img class="svg" src="images/question.svg" style="position: relative; top: 2px; left:3px;"></label>
+						<div id="additional_list" class="mc-radio-group mc-radio-group-spaced mc-radio-clean-type">
+                            
+							<div id="clean_type_1" class="time-estimate-data mc-radio mc-radio2 js-mc-radio active" data-time="" onclick="MaidOrder('clean_type',1)">
+								<span class="hide-on-phone">Standard</span>            
+								<div class="only-on-phone">
+									<span>Standard</span>
+								</div>
+							</div>
+                            
+							<div id="clean_type_2" class="time-estimate-data mc-radio mc-radio2 js-mc-radio" data-time="" onclick="MaidOrder('clean_type',2)">
+								<span class="hide-on-phone">Premium</span>
+								<div class="only-on-phone">
+									<span>Premium</span>
+								</div>            
+							</div>
+                            
+                            <div id="clean_type_3" class="time-estimate-data mc-radio mc-radio2 js-mc-radio" data-time="" onclick="MaidOrder('clean_type',3)">
+								<span class="hide-on-phone">Deep Clean</span>            
+								<div class="only-on-phone">
+									<span>Deep Clean</span>
+								</div>
+							</div>
+                            
+							<div id="clean_type_4" class="time-estimate-data mc-radio mc-radio2 js-mc-radio" data-time="+$10" onclick="MaidOrder('clean_type',4)">
+								<span class="hide-on-phone">Move In/Out</span>
+								<div class="only-on-phone">
+									<span>Move In/Out</span>
+								</div>            
+							</div>
+						</div>    			
+					</div>
+					<style>
+                        .price_address{
+                            color: #47c7b2;
+                            display: block;
+                            margin-top: 5px;
+                            text-align: center;
+                        }
+                    </style>
+                    <div class="input-group clear" id="maid_extras" style="display:none; margin: 5px 0;">
+						<label class="js-open-modal" data-open-modal="clean-information">Extras  <img class="svg" src="images/question.svg" style="position:relative; top:2px; left:3px;"></label>
+						<div id="additional_list" class="mc-radio-group mc-radio-group-spaced mc-radio-clean-type">
+                            
+							<div id="extras_1" class="time-estimate-data mc-radio mc-radio js-mc-radio" onclick="MaidOrder('extras',1)">
+								<span class="hide-on-phone">Inside Fridge <span class="price_address">$30</span></span>            
+								<div class="only-on-phone" style="padding: 3px 0 0 0">
+									<span>Inside Fridge <span class="price_address">$30</span></span>
+								</div>
+							</div>
+                            
+							<div id="extras_2" class="time-estimate-data mc-radio mc-radio js-mc-radio" onclick="MaidOrder('extras',2)">
+								<span class="hide-on-phone">Inside Oven <span class="price_address">$30</span></span>
+								<div class="only-on-phone" style="padding: 3px 0 0 0">
+									<span>Inside Oven <span class="price_address">$30</span></span>
+								</div>            
+							</div>
+                            
+                            <div id="extras_3" class="time-estimate-data mc-radio mc-radio js-mc-radio" onclick="MaidOrder('extras',3)">
+								<span class="hide-on-phone">Inside Cabinets <span class="price_address">$30</span></span>            
+								<div class="only-on-phone" style="padding: 3px 0 0 0">
+									<span>Inside Cabinets <span class="price_address">$30</span></span>
+								</div>
+							</div>
+						</div>    			
+					</div>
+                    
+					<!-- END OF INPUT GROUP -->
+					<!--<p style="text-align:center">Additional: <br>Comforter - $20 | Blanket - $10 | Pillow - $8</p>-->
+				</form>
+				<div class="input-group center mt4 mb4 clear only-on-phone" style="margin: 0px auto !important;position: -webkit-sticky;position: sticky;bottom:0; display: block;float: none !important;clear: both;">			
+							<button class="form-btn active green  large-center" onclick="toWashSchedule();" style="width: 100%;">Next</button>		
+						</div>
+				<div class="input-group center mt4 mb4 clear hide-on-phone">
+					<button class="form-btn active green large-center js-step" onclick="toWashSchedule();">Next</button>
+				</div>
+			</div>
+			
+			
+			<div id="dryclean_order" class="content-booking-flow-section" style="display:none; max-height: calc(100vh - 170px);">
+    	<div class="section-title clear">
+            <h2 id="order-title-2">Order Dry Cleaning Today</h2>
+        </div>
+    	<form>
+			<div class="faq-question clear dryclean_expand" style="margin-top: 4%; padding-bottom:0;">
+            <div class="icon" onclick="var element1 = document.getElementsByClassName('faq-question')[0];if(element1.classList.contains('open')){element1.classList.remove('open');} else {element1.classList.add('open');}"><span></span><span></span></div>
+            <h2 style="font-size:20px;color:#3d77ea;position:relative;top:12px;" onclick="var element1 = document.getElementsByClassName('faq-question')[0];if(element1.classList.contains('open')){element1.classList.remove('open');} else {element1.classList.add('open');}">I want to list Dry Clean Items Myself! (optional)</h2>
+            <div class="answer">
+                <div class="input-group ">
+    			<label for="room_bedroom-styled">Items</label>
+                    
+    			<div class="mc-radio-group" style="padding-bottom: 30px;">
+    				<div class="mc-radio js-mc-radio active" style="flex:2;color:black; background-color:white; border-color:#dce1e5;-webkit-align-items:baseline;padding-left:3%;">Launder Shirt - $3</div>
+    				<div class="mc-radio js-mc-radio" style="background-color: #3d77ea;color: white;" onclick="price(13)">-</div>
+    				<div id="count_1" class="mc-radio js-mc-radio" style="flex: 0.5;">0</div>
+                    <div class="mc-radio js-mc-radio" style="background-color: #3d77ea;color: white;" onclick="price(1)">+</div>
+    			</div>
+                <div class="mc-radio-group">
+    				<div class="mc-radio js-mc-radio active" style="flex:2;color:black; background-color:white; border-color:#dce1e5;-webkit-align-items:baseline;padding-left:3%;">Pants - $7</div>
+    				<div class="mc-radio js-mc-radio" style="background-color: #3d77ea;color: white;" onclick="price(14)">-</div>
+    				<div id="count_2" class="mc-radio js-mc-radio" style="flex: 0.5;">0</div>
+                    <div class="mc-radio js-mc-radio" style="background-color: #3d77ea;color: white;" onclick="price(2)">+</div>
+    			</div>
+                <div class="mc-radio-group">
+    				<div class="mc-radio js-mc-radio active" style="flex: 2;color: black; background-color: white; border-color: #dce1e5;-webkit-align-items:baseline;padding-left:3%;">Shirt - $6</div>
+    				<div class="mc-radio js-mc-radio" style="background-color: #3d77ea;color: white;" onclick="price(15)">-</div>
+    				<div id="count_3" class="mc-radio js-mc-radio" style="flex: 0.5;">0</div>
+                    <div class="mc-radio js-mc-radio" style="background-color: #3d77ea;color: white;" onclick="price(3)">+</div>
+    			</div>
+                <div class="mc-radio-group">
+    				<div class="mc-radio js-mc-radio active" style="flex: 2;color: black; background-color: white; border-color: #dce1e5;-webkit-align-items:baseline;padding-left:3%;">2PC Suit - $15</div>
+    				<div class="mc-radio js-mc-radio" style="background-color: #3d77ea;color: white;" onclick="price(16)">-</div>
+    				<div id="count_4" class="mc-radio js-mc-radio" style="flex: 0.5;">0</div>
+                    <div class="mc-radio js-mc-radio" style="background-color: #3d77ea;color: white;" onclick="price(4)">+</div>
+    			</div>
+                <div class="mc-radio-group">
+    				<div class="mc-radio js-mc-radio active" style="flex: 2;color: black; background-color: white; border-color: #dce1e5;-webkit-align-items:baseline;padding-left:3%;">3PC Suit - $21</div>
+    				<div class="mc-radio js-mc-radio" style="background-color: #3d77ea;color: white;" onclick="price(17)">-</div>
+    				<div id="count_5" class="mc-radio js-mc-radio" style="flex: 0.5;">0</div>
+                    <div class="mc-radio js-mc-radio" style="background-color: #3d77ea;color: white;" onclick="price(5)">+</div>
+    			</div>
+                <div class="mc-radio-group">
+    				<div class="mc-radio js-mc-radio active" style="flex: 2;color: black; background-color: white; border-color: #dce1e5;-webkit-align-items:baseline;padding-left:3%;">Short Coat - $18</div>
+    				<div class="mc-radio js-mc-radio" style="background-color: #3d77ea;color: white;" onclick="price(18)">-</div>
+    				<div id="count_6" class="mc-radio js-mc-radio" style="flex: 0.5;">0</div>
+                    <div class="mc-radio js-mc-radio" style="background-color: #3d77ea;color: white;" onclick="price(6)">+</div>
+    			</div>
+                <div class="mc-radio-group">
+    				<div class="mc-radio js-mc-radio active" style="flex: 2;color: black; background-color: white; border-color: #dce1e5;-webkit-align-items:baseline;padding-left:3%;">Regular Coat - $25</div>
+    				<div class="mc-radio js-mc-radio" style="background-color: #3d77ea;color: white;" onclick="price(19)">-</div>
+    				<div id="count_7" class="mc-radio js-mc-radio" style="flex: 0.5;">0</div>
+                    <div class="mc-radio js-mc-radio" style="background-color: #3d77ea;color: white;" onclick="price(7)">+</div>
+    			</div>
+                <div class="mc-radio-group">
+    				<div class="mc-radio js-mc-radio active" style="flex: 2;color: black; background-color: white; border-color: #dce1e5;-webkit-align-items:baseline;padding-left:3%;">Shorts / Skirt - $6</div>
+    				<div class="mc-radio js-mc-radio" style="background-color: #3d77ea;color: white;" onclick="price(20)">-</div>
+    				<div id="count_8" class="mc-radio js-mc-radio" style="flex: 0.5;">0</div>
+                    <div class="mc-radio js-mc-radio" style="background-color: #3d77ea;color: white;" onclick="price(8)">+</div>
+    			</div>
+                <div class="mc-radio-group">
+    				<div class="mc-radio js-mc-radio active" style="flex: 2;color: black; background-color: white; border-color: #dce1e5;-webkit-align-items:baseline;padding-left:3%;">Sweater / Blouse - $8</div>
+    				<div class="mc-radio js-mc-radio" style="background-color: #3d77ea;color: white;" onclick="price(21)">-</div>
+    				<div id="count_9" class="mc-radio js-mc-radio" style="flex: 0.5;">0</div>
+                    <div class="mc-radio js-mc-radio" style="background-color: #3d77ea;color: white;" onclick="price(9)">+</div>
+    			</div>
+                <div class="mc-radio-group">
+    				<div class="mc-radio js-mc-radio active" style="flex: 2;color: black; background-color: white; border-color: #dce1e5;-webkit-align-items:baseline;padding-left:3%;">Blazer / Suit Jacket - $8</div>
+    				<div class="mc-radio js-mc-radio" style="background-color: #3d77ea;color: white;" onclick="price(22)">-</div>
+    				<div id="count_10" class="mc-radio js-mc-radio" style="flex: 0.5;">0</div>
+                    <div class="mc-radio js-mc-radio" style="background-color: #3d77ea;color: white;" onclick="price(10)">+</div>
+    			</div>
+                <div class="mc-radio-group">
+    				<div class="mc-radio js-mc-radio active" style="flex: 2;color: black; background-color: white; border-color: #dce1e5;-webkit-align-items:baseline;padding-left:3%;">Dress - $14</div>
+    				<div class="mc-radio js-mc-radio" style="background-color: #3d77ea;color: white;" onclick="price(23)">-</div>
+    				<div id="count_11" class="mc-radio js-mc-radio" style="flex: 0.5;">0</div>
+                    <div class="mc-radio js-mc-radio" style="background-color: #3d77ea;color: white;" onclick="price(11)">+</div>
+    			</div>
+                <div class="mc-radio-group">
+    				<div class="mc-radio js-mc-radio active" style="flex: 2;color: black; background-color: white; border-color: #dce1e5;-webkit-align-items:baseline;padding-left:3%;">Scarf / Tie- $5</div>
+    				<div class="mc-radio js-mc-radio" style="background-color: #3d77ea;color: white;" onclick="price(24)">-</div>
+    				<div id="count_12" class="mc-radio js-mc-radio" style="flex: 0.5;">0</div>
+                    <div class="mc-radio js-mc-radio" style="background-color: #3d77ea;color: white;" onclick="price(12)">+</div>
+    			</div>    
+    		<!-- END OF INPUT GROUP -->
+				<p style="padding-left:10px;"><b>Note:</b> Prices listed above are general and may change depending on the type of material or size, pleats, extra thick items or multiple layering. Silk, beads, leather, fur require special treatment. Additional charge will be added to the order if special treatment needed or additional items are added.
+				</p><a href="pricing.html" style="display:block; margin:auto; text-align:center;" target="_blank">Visit Pricing Page</a>
+			</div>
+			</div>
+		</div>	
+    </form>
+				<div class="input-group center mt4 mb4 clear only-on-phone" style="margin: 0px auto !important;position: -webkit-sticky;position: sticky;bottom:0; display: block;float: none !important;clear: both;">			
+                    <button class="form-btn active green  large-center" onclick="toWashSchedule();" style="width: 100%;">Next</button>		
+                </div>
+		<div class="input-group center mt4 mb4 clear hide-on-phone">
+			<button class="form-btn active green  large-center js-step" onclick="toWashSchedule();">Next</button>
+		</div>
+    </div>		
+	<div class="right-side" style="width: 17.33333333%; float: left; margin-top: 60px; margin-left:4%;">
+        <ul class="cities hide-on-phone " style="/* margin-top:-30px; */border:0;">
+            <li><img src="assets/templates/eflaundry/images/WashyCare_mom1.png" style="width:100%;max-width: 140px;"></li>
+        </ul>
+    </div>		
+</div>
+    	<div id="washschedule" class="booking-flow-section clear" style="display:none; max-width: 1200px; margin: auto;">
+            <div class="content-booking-flow-section">
+                <div class="section-title clear">
+                <h2 id="order-title-2">Let's Set the Date</h2>
+            </div>
+        	<form class="time-page-form" accept-charset="utf-8">
+				<div class="time_view" style="width:100%;">
+				</div>	
+				<script type="text/javascript" src="assets/templates/eflaundry/js/time/jquery.min.js"></script>
+				<script type="text/javascript" src="assets/templates/eflaundry/js/time/help.js"></script>
+				<script type="text/javascript" src="assets/templates/eflaundry/js/time/view.js"></script>
+				<script type="text/javascript" src="assets/templates/eflaundry/js/time/time-picker-tmp-new.js"></script>		
+            </form>
+			<div class="input-group center mt4 mb4 clear only-on-phone" style="margin: 0px auto !important;position: -webkit-sticky;position: sticky;bottom:0; display: block;float: none !important;clear: both;">			
+                <button class="form-btn active green  large-center" onclick="toWashAddress();" style="width: 100%;">Next</button>		
+            </div>
+            <div class="input-group center mt4 mb4 clear hide-on-phone" style="margin: 20px auto !important;">			
+                <button class="form-btn active green  large-center" onclick="toWashAddress();">Next</button>		
+            </div>  
+		</div>
+		<div class="right-side" style="width: 17.33333333%; float: left; margin-top: 60px; margin-left:2%;">
+        	<ul class="cities hide-on-phone " style="/* margin-top:-30px; */border:0;">
+            	<li>
+					<img src="assets/templates/eflaundry/images/WashyCare_dad1.png" style="display: block;width:100%;max-width:190px;margin:0px auto 10px auto;">
+				</li>
+        	</ul>
+    	</div>		
+    </div>
+    <script>
+	function checkSameDay(){
+	
+	if(document.getElementById('service').value == 'maid'){
+		var x1 = document.getElementById("day-start").selectedIndex;
+		var y1 = document.getElementById("day-start").options;
+		var p1 = document.getElementById("time-start").selectedIndex;
+		var w1 = document.getElementById("time-start").options;
+		var dateX = y1[x1].text;
+		//console.log(dateX);
+		var dateY = w1[p1].text;
+		//console.log(dateY);
+		document.getElementById('starting-day-header').innerHTML = dateX;
+		document.getElementById('starting-time-header').innerHTML = dateY;
+		document.getElementById('day-start-receipt').innerHTML = dateX;
+		document.getElementById('time-start-receipt').innerHTML = dateY;
+		var strX = dateX.length
+		var resX = dateX.substring(0, strX-2);
+		var strY = dateY.length
+		var resY = dateY.substring(0, strY-11);
+		var date = new Date();
+		var YR = date.getFullYear();
+		var dateString1 = resX + " " + YR + " " + resY;
+		//console.log(dateString1);
+		return;
+	}
+	var x1 = document.getElementById("day-start").selectedIndex;
+	var y1 = document.getElementById("day-start").options;
+	var p1 = document.getElementById("time-start").selectedIndex;
+	var w1 = document.getElementById("time-start").options;
+	var dateX = y1[x1].text;
+	//console.log(dateX);
+	var dateY = w1[p1].text;
+	//console.log(dateY);
+	document.getElementById('pickup-day-header').innerHTML = dateX;
+	document.getElementById('pickup-time-header').innerHTML = dateY;
+	document.getElementById('day-start-receipt').innerHTML = dateX;
+	document.getElementById('time-start-receipt').innerHTML = dateY;
+	var strX = dateX.length
+	var resX = dateX.substring(0, strX-2);
+	var strY = dateY.length
+	var resY = dateY.substring(0, strY-11);
+	var date = new Date();
+	var YR = date.getFullYear();
+	var dateString1 = resX + " " + YR + " " + resY;
+	
+	var p2 = document.getElementById("time-end").selectedIndex;
+    var w2 = document.getElementById("time-end").options;
+	var x2 = document.getElementById("day-end").selectedIndex;
+    var y2 = document.getElementById("day-end").options;
+		
+	var dateX = y2[x2].text;
+	var dateY = w2[p2].text;
+	document.getElementById('dropoff-day-header').innerHTML = dateX;
+	document.getElementById('dropoff-time-header').innerHTML = dateY;
+	document.getElementById('day-end-receipt').innerHTML = dateX;
+	document.getElementById('time-end-receipt').innerHTML = dateY;
+	var strX = dateX.length
+	var resX = dateX.substring(0, strX-2);
+	var strY = dateY.length
+	var resY = dateY.substring(0, strY-11);
+	var date = new Date();
+	var YR = date.getFullYear();
+	var dateString2 = resX + " " + YR + " " + resY;
+	//console.log(dateString2);
+	var someDate2 = new Date(dateString2);
+	someDate2 = someDate2.getTime();
+	
+	var someDate1 = new Date(dateString1);
+	someDate1 = someDate1.getTime();
+
+	var difference = (someDate2 - someDate1)/(1000*60*60);
+	//console.log(difference + " hours difference for pickup and delivery");
+	
+	if(y1[x1].text == y2[x2].text || difference < 22 ){
+		if(document.getElementById("sameday").value == 1){
+			//DO NOTHING
+		} else {
+			document.getElementById('total_1').innerHTML = parseInt(document.getElementById('total_1').innerHTML) + 5;
+			document.getElementById('total_2').innerHTML = parseInt(document.getElementById('total_2').innerHTML) + 5;
+			document.getElementById("sameday").value = 1;
+            document.getElementById('sameday-receipt').innerHTML = "SameDay/Rush +$5";
+            document.getElementById('sameday-receipt-extra').innerHTML = "SameDay/Rush";
+            document.getElementById('sameday-receipt-extra-price').innerHTML = "+$5.00";
+		}
+	} else {
+		if(document.getElementById("sameday").value == 1){
+			document.getElementById('total_1').innerHTML = parseInt(document.getElementById('total_1').innerHTML) - 5;
+			document.getElementById('total_2').innerHTML = parseInt(document.getElementById('total_2').innerHTML) - 5;
+			document.getElementById("sameday").value = 0;
+            document.getElementById('sameday-receipt').innerHTML = "";
+            document.getElementById('sameday-receipt-extra').innerHTML = "";
+            document.getElementById('sameday-receipt-extra-price').innerHTML = "";
+		} else {
+			//DO NOTHING
+		}
+	}
+	
+	updateTotal();
+}
+</script>
+
+		
+
+
+<div id="washaddress" class="booking-flow-section clear" style="display:none; max-height: 100%; max-width: 1200px; margin: auto;">
+            <div class="content-booking-flow-section">
+                <div class="section-title clear" style="margin:0;">
+                    <h2 id="order-title-3">Where Should We Pickup From?</h2>
+                </div>
+            <form style="margin-top:0px; margin-bottom: 40px;"> 
+                
+                <div class="input-group" id="maid_frequency" style="display:none; margin: 25px 0;">
+						<label>How Often Should We Clean</label>
+						<div id="frequency_list" class="mc-radio-group">
+							<div id="frequency_1" class="mc-radio js-mc-radio" onclick="MaidOrder('frequency',1)">One Time</div>
+							<div id="frequency_4" class="time-estimate-data mc-radio mc-radio2 js-mc-radio" data-time="20% off" onclick="MaidOrder('frequency',4)">Weekly</div>
+                            <div id="frequency_3" class="time-estimate-data mc-radio mc-radio2 js-mc-radio active" data-time="15% off" onclick="MaidOrder('frequency',3)">Every 2 Weeks</div>
+							<div id="frequency_2" class="time-estimate-data mc-radio mc-radio2 js-mc-radio" data-time="10% off" onclick="MaidOrder('frequency',2)">Every 4 Weeks</div>
+						</div>
+					</div>
+                    
+					<!-- END OF INPUT GROUP -->
+                
+                <div id="address-step" class="action-bar" style="width:100%">
+                    <div class="input-group" style="margin: 25px 0;">
+                        <div class="sub-input-group large" data-for="location_address_1">
+                            <label for="address-form">Address</label>
+							<div style="float:right;width: 80px;height:20px;font-size:11px;margin-bottom:-20px;top:-28px; right:120px; position:relative;vertical-align:bottom;letter-spacing:1.25px;font-weight:700;">
+								<span style="position:relative; top: 1px; color: #14374c;">HOTEL</span>
+								<span><input style="width:18px; height:18px;" type="checkbox" id="hotel_check" name="hotel_check" onclick="HotelUser();"></span>
+							</div>
+							<div style="float:right;width: 120px;height:20px;font-size:11px;margin-bottom:-20px;top:-28px;position:relative;vertical-align:bottom;letter-spacing:1.25px;font-weight:700;">
+								<span style="position:relative; top: 1px; color: #14374c;">DOORMAN</span>
+								<span><input style="width:18px; height:18px;" type="checkbox" id="doorman_check" name="doorman_check" onclick="if(document.getElementById('doorman').value != 'on'){document.getElementById('doorman').value='on';} else {document.getElementById('doorman').value='';}"></span>
+							</div>
+								<input id="address-form" type="text" name="address-form" required="true" placeholder="Enter a location" autocomplete="address-line1" onblur="if(document.getElementById('address-form').value.toLowerCase().includes('hotel')){HotelUser();}">
+							<span id="already-link1" style="cursor:pointer; position:relative; top:5px; left:5px; color:#3d77ea;" onclick="document.getElementById('customer-login-ui').setAttribute('data-modal-state','open'); document.getElementById('login-step').value=2; document.getElementsByClassName('global-alert')[0].classList.remove('alert-open');">Already have an account? <b>Login</b></span>    
+					   </div>
+                        <div class="sub-input-group x-small mobile-45">
+                            <label for="apartment-form">Apt. Number</label>
+                            <input id="apartment-form" type="text" name="apartment-form" required="true" maxlength="5" autocomplete="address-line2">
+                        </div>
+                        <div class="sub-input-group small " style="margin-left: 5%;">
+                            <label for="zipcode-form">ZipCode</label>
+                            <input id="zipcode-form" type="tel" name="zipcode-form" required="true" maxlength="5" onblur="checkZipcode();" autocomplete="postal-code" onclick="this.setSelectionRange(0, 0);">
+							<input type="hidden" id="error_zip" name="error_zip" value="" />
+                        </div>
+		              </div>
+                </div>
+                    
+                    
+					<!-- END OF INPUT GROUP -->
+			
+			
+			<h3 id="zipcode_alert" style="display:none; text-align:center; color:red; width:100%; margin:0; margin-top:10px; margin-bottom:20px;"></h3>
+                <div class="input-group" style="top:20px;display: inline-block;">			
+                    <label for="instructions-form">Special Notes or Instructions</label>			
+                    <textarea id="instructions-form" style="height:75px;" name="instructions-form" maxlength="1023" placeholder="To get into my building, press #... and i will leave laundry behind my door" onblur="if(document.getElementById('instructions-form').value.toLowerCase().includes('hotel')){HotelUser();}"></textarea>
+					<p class="only-on-phone hang-dry-notice" style="text-align: center;">NOTE: hang dry items MUST be separated by a plastic bag.</p>
+                </div>
+				<div class="input-group" data-for="tips-form" style="width:50%;margin:auto;float:none;margin-bottom:10px;display:inline-block;margin-top:20px;max-width:300px;">
+                	<label for="tips-form" style="display:inline">Tips</label>
+                	<input id="tips-form" type="text" name="tips-form" required="true" value="0" onchange="document.getElementById('tips').value = document.getElementById('tips-form').value; updateTotal();">
+                </div>
+          
+            </form>
+				<div class="input-group center mt4 mb4 clear only-on-phone" style="margin: 0px auto !important;position: -webkit-sticky;position: sticky;bottom:0; display: block;float: none !important;clear: both;">			
+                    <button class="form-btn active green  large-center" onclick="if(document.getElementById('user_id').value > 0){toWashReceipt();} else {toWashName();}" style="width: 100%;">Next</button>		
+                </div>
+                <div class="input-group center mt4 mb4 clear hide-on-phone" style="margin: 20px auto !important;">			
+                    <button class="form-btn active green  large-center" onclick="if(document.getElementById('user_id').value > 0){toWashReceipt();} else {toWashName();}">Next</button>		
+                </div>  
+		</div>
+			<div class="right-side" style="width: 17.33333333%; float:left; margin-left:2%; margin-top:5%;">
+        <ul class="cities hide-on-phone " style="/* margin-top:-30px; */border:0;">
+            <li><img src="assets/templates/eflaundry/images/WashyCare_son.png" style="display: block;width:100%;max-width:145px;margin: 40px auto 10px auto;"></li>
+<p class="hang-dry-notice" style="text-align: center;">NOTE: hang dry items MUST be separated by a plastic bag.</p>
+</li>
+        </ul>
+    </div>
+</div>
+		
+		
+	<div id="washname" class="booking-flow-section clear" style="display: none;">
+            <div class="content-booking-flow-section">
+                <div class="section-title clear">
+                <h2 id="order-title-4" style="line-height:50px;">Tell Us About Yourself</h2>
+                </div>
+        	<form style="max-width: 400px;margin: 40px auto;">  
+                <div class="input-group" style="max-width:350px; margin: 15px auto;">
+                	<label for="firstname">First Name</label>
+                    <input id="firstname" type="text" name="firstname" maxlength="100" value="" autocomplete="given-name">
+                </div>
+			
+				<div class="input-group" style="max-width:350px; margin:15px auto;">
+					<label for="lastname">Last Name</label>
+					<input id="lastname" type="text" name="lastname" maxlength="100" value="" autocomplete="family-name">
+				</div>
+				
+				<div class="input-group" style="max-width:350px; margin:15px auto;">
+                	<label for="phone">Phone
+                    	<span class="tooltip-parent">
+                        	<img class="svg" src="images/question-grey.svg">
+                            <div class="tooltip" data-align="top">
+                                <div class="tooltip-content">
+                                    We will only call you regarding TIME-CRITICAL issues.
+                                </div> <!-- end of tooltip-content -->
+                            </div> <!-- End of Tooltip -->
+                        </span>
+                    </label>
+                	<input id="phone" type="tel" name="phone" maxlength="20" value="" onclick="if(parseInt(this.value)>0){}else{this.setSelectionRange(0, 0);}" autocomplete="tel">
+                </div>
+          
+            </form>
+				<div class="input-group center mt4 mb4 clear only-on-phone" style="margin: 0px auto !important;position: -webkit-sticky;position: sticky;bottom:0;display: block;float: none !important;clear: both;">			
+                    <button class="form-btn active green  large-center" onclick="toWashReceipt();" style="width: 100%;">Next</button>		
+                </div>
+                <div class="input-group center mt4 mb4 clear hide-on-phone" style="margin: 20px auto !important;">			
+                    <button class="form-btn active green  large-center" onclick="toWashReceipt();">Next</button>		
+                </div>  
+		</div>
+</div>	
+		
+		
+     <div id="receiptpage" class="booking-flow-section clear" data-section="5" style="display:none; height:100%;">
+
+    <section class="page-booking-flow booking-flow-receipt clear" style="height:100%;">
+        <div class="content-booking-flow" style="min-height:calc(100% - 60px);">
+            <div class="mobile-only-receipt-title only-on-phone" style="margin-bottom: -10px !important; padding-bottom: 0px;">
+                <h2>Almost There!</h2>
+				<span id="already-link2" style="cursor:pointer;position:relative;top:-10px;color:#3d77ea;text-align:center;display:block;" onclick="document.getElementById('customer-login-ui').setAttribute('data-modal-state','open');  document.getElementById('login-step').value=5;">Already have an account? <b>Login</b></span>
+
+				 <h3 id="error-message1" class="red"></h3>
+            </div>
+
+
+            <div id="booking-flow-receipt-estimate" class="booking-flow-receipt-bar">
+                <div class="content-receipt">
+                    <h4 class="hide-on-phone">Receipt</h4>
+                    <ul>
+                        <li id="service-receipt" class="service_id-display">Wash & Fold</li>
+                        <li>
+                            <span id="detergent-receipt" class="inline"></span>
+                            <span id="softener-receipt" class="inline"></span>
+                        </li>
+                        <li id="clorox-bag-receipt" class="add_on_service_ids-display" style="display: list-item;">
+                            <span id="clorox-receipt" class="inline"></span>
+                            <span id="bag-receipt" class="inline"></span>
+                        </li>
+                        <li>
+                            <div id="frequency-part-receipt" class="inline recurring-display"></div> 
+                            <span id="day-start-receipt" class="inline start_dt-display-long"></span>
+                                at <span id="time-start-receipt" class="inline start_time-display"></span>
+                        <br />
+                            <div class="inline recurring-display"></div> 
+                            <div id="dropoff-part-receipt">
+								<span id="day-end-receipt" class="inline start_dt-display-long"></span>
+    							at
+								<span id="time-end-receipt" class="inline start_time-display"></span>
+							</div>
+                            <span id="sameday-receipt" class="inline start_time-display"></span>
+                        </li>
+                        <li>
+                            <address>
+                                <span id="address-receipt" class="inline location_address_1-display"></span>
+                                <span id="apartment-receipt" class="inline location_apartment_suite-display"></span><br>
+                                <span id="city-receipt" class="inline location_city-display">New York</span>,
+                                <span id="state-receipt" class="inline location_state-display">NY</span>
+                                <span id="zipcode-receipt" class="inline location_zip-display"></span>
+                            </address>
+                        </li>
+						<li id="add-on-receipt-part" class="add_on_service_ids-display" data-value="201" style="display:none;">
+                            <span id="add-on-receipt" class="inline room_bedroom-display-with-noun">
+                            </span>
+                        </li>
+                        <li class="add_on_service_ids-display" data-value="201" style="display: list-item;">
+                            <span id="instructions-receipt" class="inline room_bedroom-display-with-noun">
+                                NO INSTRUCTIONS. Thank you for keeping it simple.
+                            </span>
+                        </li>
+                    </ul>
+
+                    <div class="discount-code">
+                        <!--<input type="hidden" id="referral_email" name="referral_email" value="">-->
+                            <div id="discount-code-form" class="input-group" style="display:none;">
+                                <!--<input type="text" id="referral_email" name="referral_email" placeholder="Referral Code / Email" value="" style="-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;border:1px solid #dce1e5;width:100%;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;height:50px;padding: 0 15px;">-->
+                                <button class="discount" onclick="showHint();">Apply</button>
+                            </div>
+                        
+                    </div>
+                    <!-- End of discount-code -->
+                    <div id="total-minimum-price-line" class="receipt-price clear">
+                    <span class="cost-title large ">Minimum Total 
+                        <span class="tooltip-parent extra-info">- Details
+                            <div class="tooltip" data-align="top">
+                                <div class="tooltip-content">
+                                    <div class="line-item clear">
+                                        <span class="service_id-display">Minimum Order</span>
+                                        <span id="minimum-receipt" class="estimate-core-service-amount-formatted">$30</span>
+                                    </div> <!-- end line-item -->
+                                    <div class="estimate-add-on-services-amount-container hide-if-zero
+                                                line-item clear" style="display: block;">
+                                        <span id="minimum-receipt-sub">Price by weight</span>
+                                        <span id="minimum-receipt-sub-price" class="estimate-add-on-services-amount-formatted">$1.59/lb</span>
+                                    </div> <!-- end line-item -->
+                                </div> <!-- end of tooltip-content -->
+                            </div> <!-- End of Tooltip -->
+                        </span>
+                    </span>
+                        <span id="subtotal-receipt" class="calc-price">$30.00</span>
+                    </div>
+					<div id="receipt-price-per-lb-line" class="discounts receipt-price clear" style="display:none;">
+                        <span class="cost-title">Price 
+                        <span class="tooltip-parent extra-info">- Details
+                                <div class="tooltip" data-align="top">
+                                    <div class="tooltip-content">
+                                        <div class="line-item clear"><span id="receipt-price-per-lb-content">Per lb</span><span id="receipt-price-per-lb">$1.59 lb</span></div>
+                                        <!-- end line-item -->
+                                    </div> <!-- end of tooltip-content -->
+                                </div> <!-- End of Tooltip -->
+                            </span>
+                        </span>
+                        <span class="calc-price"> <span id="total-price-per-lb">$1.59 /lb</span></span>
+                    </div>
+                    <div class="extras_receipt receipt-price clear">
+                        <span class="cost-title">Extras 
+                        <span class="tooltip-parent extra-info">- Details
+                                <div class="tooltip" data-align="top">
+                                    <div class="tooltip-content">
+                                        <div class="line-item clear"><span id="clorox-receipt-extra"></span><span id="clorox-receipt-extra-price"></span></div>
+                                        <div class="line-item clear"><span id="bag-receipt-extra"></span><span id="bag-receipt-extra-price"></span></div>
+                                        <div class="hide-if-zero line-item clear"><span id="sameday-receipt-extra"></span><span id="sameday-receipt-extra-price"></span></div>
+                                        <!-- end line-item -->
+                                    </div> <!-- end of tooltip-content -->
+                                </div> <!-- End of Tooltip -->
+                            </span>
+                        </span>
+                        <span class="calc-price">+  <span id="total-extra-price">$0.00</span></span>
+                    </div>
+                    <div class="discounts receipt-price clear">
+                        <span class="cost-title">Discounts 
+                        <span class="tooltip-parent extra-info">- Details
+                                <div class="tooltip" data-align="top">
+                                    <div class="tooltip-content">
+                                        <div class="hide-if-zero line-item clear" >
+                                            <span id="discount-receipt"></span><span id="discount-receipt-price"></span>
+                                        </div>
+										<div class="hide-if-zero line-item clear" >
+                                            <span id="second-discount-receipt"></span><span id="second-discount-receipt-price"></span>
+                                        </div>
+                                    </div> <!-- end of tooltip-content -->
+                                </div> <!-- End of Tooltip -->
+                            </span>
+                        </span>
+                        <span class="calc-price">-  <span class="estimate-discount-formatted " id="discount-receipt-total-price">$0.00</span></span>
+                    </div>
+                    <div class="discounts receipt-price clear">
+                        <span class="cost-title">Tips</span>
+                        <span class="calc-price">+  <span id="tips-receipt-price">$0.00</span></span>
+                    </div>
+
+                    <div id="receipt-total-line" class="receipt-total receipt-price clear">
+                        <span class="cost-title large">Estimated Total</span>
+						<span id="total-receipt" class="calc-price large"><b style="font-size:10px;">$</b>0.00</span>
+					</div>
+					<div id="exist-user-btn" class="input-group center hide-on-phone" style="">
+                        	<button id="submit_btn1" class="submit form-btn green small js-final-submit" onclick="Process(); gtag_report_conversion();" style="width: 100%; max-width: 350px; height: 60px; margin-top: 20px; font-size: 20px;">Schedule</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="signup-form-logged-in" class="booking-flow-receipt-main clear" style="display:none;">
+                <div class="content-booking-flow-section hide-on-phone">
+                    <div class="hide-on-phone">
+                        <h2>Almost there!</h2>
+						<h3 id="error-message2" class="red"></h3>
+                    </div>
+                </div>
+            </div>
+       
+	<script>
+		function removeSpaces(string) {
+			return $('#CardNumber').val().replace(/[^\d.*]/g, ""); //string.split(' ').join('');
+		}
+		function testCreditCard () {
+			var temp_var = removeSpaces(document.getElementById('CardNumber').value);
+			var resp = checkCreditCard (temp_var);
+			if (resp == "Visa" || resp == "MasterCard" || resp == "Amex" || resp == "Discover") {
+				document.getElementById('CardNumber').style.color = '#16374b';
+                document.getElementById('CardNumber').style.borderColor = '#dce1e5';
+				document.getElementById("cardtype").value = resp;
+			} else { 
+				document.getElementById('CardNumber').style.color = 'red';
+                document.getElementById('CardNumber').style.borderColor = 'red';
+			}
+		}
+	</script>
+
+            <div id="signup-form" class="booking-flow-receipt-main clear">
+                <div class="content-booking-flow-section" style="max-width:400px;">
+                    <div class="hide-on-phone">
+                        <h2>Almost there!</h2>
+						<span id="already-link3" style="cursor:pointer;position:relative;top:-35px;color:#3d77ea;text-align:center;display:block;" onclick="document.getElementById('customer-login-ui').setAttribute('data-modal-state','open'); document.getElementById('login-step').value=5;">Already have an account? <b>Login</b></span>
+						<h3 id="payment-charge-note" class="grey" style="font-size: 15px; color: #51ceb8;">We won't charge your card until we receive and measure/itemize your garment.</h3>
+						<h3 id="error-message3" class="red"></h3>
+                    </div>
+                    <form action="#" method="get" accept-charset="utf-8">
+                        <!-- END of Input group -->
+                        <div class="input-group">
+                            <label for="email">Email Address</label>
+                            <input id="email" type="email" name="email" maxlength="50" value="" onblur="document.getElementById('username1').value=document.getElementById('email').value" autocomplete="email">
+                        </div>
+                        <!-- END of Input group -->
+                        <div class="input-group">
+                            <label for="password">Password</label>
+							<div style="float:right;width:70px;height:20px;font-size:11px;margin-bottom:-20px;top:-25px;position:relative;vertical-align:bottom;">
+								<span style="position:relative; top: 4px; color: #14374c;">SHOW</span>
+								<span><input style="width:18px; height:18px;" type="checkbox" onclick="if(document.getElementById('password1').type=='text'){document.getElementById('password1').type='password';} else {document.getElementById('password1').type='text';}"></span></div>
+                            <input id="password1" type="password" name="password1" value="">
+                        </div>
+						<div class="input-group">
+                            <div class="sub-input-group large" style="width:65%; margin-bottom:0px;">
+                                <label for="cardnumber">Credit Card</label>
+								<input id="CardNumber" style="z-index:2;" type="tel" name="cardnumber" onblur="testCreditCard();" onclick="if(parseInt(this.value)>0){}else{this.setSelectionRange(0, 0);}" value="" autocomplete="cc-number">
+                            </div>
+                            <div class="sub-input-group small" style="width:35%">
+                                <label for="expiration">Exp. Date</label>
+                                <input id="expir" type="tel" placeholder="MM/YY" name="expiration" onclick="if(parseInt(this.value)>0){}else{this.setSelectionRange(0, 0);}" maxlength="5" value="" autocomplete="cc-exp">
+                            </div>
+                        </div>
+                        <!-- END of Input group -->
+						<label class="lower wrap" for="tos" style="white-space:normal; font-size:12px;">By pressing submit, You agree to WashyCare Cleaners
+                                <a href="terms-and-conditions.html" target="_blank" title="Terms" style="font-size:12px;">Terms of Use</a> and <a href="privacy-policy-page.html" target="_blank" title="Privacy Policy" style="font-size:12px;">Privacy Policy</a></label>
+                    </form>
+					<div class="input-group center hide-on-phone" style="">
+                        	<button id="submit_btn2" class="submit form-btn green small js-final-submit" onclick="Process(); gtag_report_conversion();" style="width: 100%; max-width: 350px; height: 60px; margin-top: 20px; font-size: 20px;">Schedule</button>
+                    </div>
+				</div>
+						
+                </div>
+            </div>
+
+            
+			<input type="hidden" name="lshirt_count" id="lshirt_count" value="0" />
+            <input type="hidden" name="pants_count" id="pants_count" value="0" />
+            <input type="hidden" name="shirt_count" id="shirt_count" value="0" />
+            <input type="hidden" name="2suit_count" id="2suit_count" value="0" />
+            <input type="hidden" name="3suit_count" id="3suit_count" value="0" />
+            <input type="hidden" name="34coat_count" id="34coat_count" value="0" />
+            <input type="hidden" name="fullcoat_count" id="fullcoat_count" value="0" />
+            <input type="hidden" name="shorts_count" id="shorts_count" value="0" />
+            <input type="hidden" name="sweater_count" id="sweater_count" value="0" />
+            <input type="hidden" name="jacket_count" id="jacket_count" value="0" />
+            <input type="hidden" name="dress_count" id="dress_count" value="0" />
+            <input type="hidden" name="scarf_count" id="scarf_count" value="0" />
+			
+			<input type="hidden" name="bedrooms" id="bedrooms" value="0">
+            <input type="hidden" name="bathrooms" id="bathrooms" value="1">
+            <input type="hidden" name="clean_type" id="clean_type" value="1">
+            <input type="hidden" name="frequency" id="frequency" value="3">
+            <input type="hidden" name="extras_var_1" id="extras_var_1" value="0">
+            <input type="hidden" name="extras_var_2" id="extras_var_2" value="0">
+            <input type="hidden" name="extras_var_3" id="extras_var_3" value="0">
+            <input type="hidden" name="pets" id="pets" value="">    
+			
+			<input type="hidden" id="service" name="service"  value="wash" />
+            <input type="hidden" id="username1" name="username1"  value="" />
+            <input type="hidden" id="detergent" name="detergent"  value="0" />
+            <input type="hidden" id="softener" name="softener"  value="0" />
+            <input type="hidden" id="clorox" name="clorox"  value="0" />
+            <input type="hidden" id="bag" name="bag"  value="0" />
+            <input type="hidden" id="sameday" name="sameday" value="0">	
+            <input type="hidden" id="instructions" name="instructions"  value="" />
+            <input type="hidden" id="total" name="total"  value="30" />
+			<input type="hidden" id="clean_total" name="clean_total"  value="110" />
+            <input type="hidden" id="tips" name="tips"  value="0" />
+            <input type="hidden" id="store_credit" name="store_credit"  value="40" />
+            <input type="hidden" id="cardtype" name="cardtype" value="" />
+			<input type="hidden" id="device" name="device" value="" />
+			<input type="hidden" id="signed_up" name="signed_up" value="" />
+			
+			<div name="user_container" id="user_container">
+				<input type="hidden" id="discount" name="discount"  value="40" />
+				<input type="hidden" id="loyalty_discount" name="loyalty_discount" value="0" />
+				<input type="hidden" id="cleaning_discount" name="cleaning_discount"  value="0" />
+				<input type="hidden" id="user_id" name="user_id"  value="" />
+				<input type="hidden" id="address" name="address"  value="" />
+				<input type="hidden" id="apartment" name="apartment"  value="" />
+				<input type="hidden" id="zipcode" name="zipcode"  value="" />
+				<input type="hidden" id="doorman" name="doorman"  value="" />
+				<input type="hidden" id="freebag" name="freebag" value="13-08-20" />
+				<input type="hidden" id="tourist" name="tourist"  value="" />
+				<input type="hidden" id="referral_email" name="referral_email"  value="" />
+			</div>
+			<input type="hidden" id="login-step" name="login-step" value="">
+			<div class="input-group center only-on-phone" style="width:95%;">
+                        <button id="submit_btn3" style="height: 60px;" class="submit form-btn large green js-final-submit" onclick="Process();gtag_report_conversion();">Schedule</button>
+                    </div>
+        </div>
+	
+<!--</section>-->
+ 
+    </div>
+</section>
+<!-- </div> -->
+</div>
+<script type="text/javascript">
+	jQuery(function($) {
+		$.mask.definitions['9'] = '';
+		$.mask.definitions['d'] = '[0-9]';
+		$("#zipcode-form").mask("ddddd");
+		$("#expir").mask("dd/dd");
+		$("#phone").mask("ddd-ddd-dddd");
+		$("#tips-form").mask("?dd");
+		$("#CardNumber").mask("?dddd dddd dddd dddd");
+	});
+	
+	var url_string = window.location.href; //window.location.href
+	var url = new URL(url_string.html);
+	var service = url.searchParams.get("service");
+	if (service == "wash") {
+		//document.getElementById('service_header').innerHTML = 'Wash & Fold';
+		document.getElementById('service').value = 'wash';
+		document.getElementById('wash_order').style.display = "block";
+		document.getElementById('wash_order').style.visibility = "visible";
+		document.getElementById('receipt-total-line').style.visibility = "hidden";
+		document.getElementById('total-minimum-price-line').style.display = "none";
+		document.getElementById('receipt-price-per-lb-line').style.display = "block";
+	} else if (service == "maid") {
+		console.log("maid service");
+		
+		document.getElementById('tip-header').innerHTML = 'This is an estimate booking total and pay change based on actual home specifications.';
+		document.getElementById('total_1').innerHTML = 120;
+		document.getElementById('total_2').innerHTML = 120;
+		document.getElementById('total').value = 120;
+		document.getElementById('tips-form').value = 20;
+		
+		document.getElementById('service').value = 'maid';
+		document.getElementById('wash_order').style.display = "none";
+		document.getElementById('maid_order').style.display = "block";
+		document.getElementById('maid_order').style.visibility = "visible";
+        document.getElementById('wash-header').style.display = "none";
+        document.getElementById('bedrooms-header').classList.remove('not-visible');
+        document.getElementById('bathrooms-header').classList.remove('not-visible');
+        document.getElementById('clean_type-header').classList.remove('not-visible');
+		document.getElementById('bedrooms-header').style.display = "flex";
+        document.getElementById('bathrooms-header').style.display = "flex";
+        document.getElementById('clean_type-header').style.display = "flex";
+		document.getElementById('starting-header').style.display = "flex";
+		document.getElementById('pickup-header').style.display = "none";
+        document.getElementById('dropoff-header').style.display = "none";
+		document.getElementById('maid_frequency').style.display = "block";
+		document.getElementById('maid_extras').style.display = "block";
+		document.getElementById('dropoff-part-receipt').style.display = "none";
+		document.getElementsByClassName('hang-dry-notice')[0].style.display = "none";
+		document.getElementsByClassName('hang-dry-notice')[1].style.display = "none";
+		document.getElementById('order-title-3').innerHTML = "Let's Get Some Cleaning Details";
+		document.getElementById('payment-charge-note').innerHTML = "Payment will be processed the day before the appointment.";
+        //UpdateCleanTime();
+		MaidOrder('bedrooms', 0);
+		MaidOrder('bathrooms', 1);
+		MaidOrder('clean_type', 1);
+		setDiscount(40, '');
+	} else {
+		console.log("drycleaning service");
+		document.getElementById('dryclean_order').style.display = "block";
+		document.getElementById('wash_order').style.display = "none";
+		//document.getElementById('service_header').innerHTML = 'Dry Cleaning';
+		document.getElementById('service').value = 'dryclean';
+		document.getElementById('tip-header').innerHTML = 'This is an estimate order total and will depend on actual items received. Minimum requirement is $30.';
+		document.getElementById('total_1').innerHTML = 30;
+		document.getElementById('total_2').innerHTML = 30;
+		document.getElementById('total').value = 30;
+		document.getElementById('wash_header_sub').innerHTML = 'Items';
+		for (var i = 1; i < 4; i++) {
+			document.getElementById('order-title-' + i).innerHTML = "Order Dry Cleaning Today";
+		}
+	}
+	var PickUp = {},
+		DropOff = {},
+		cacheFirstTimeDate, wash = {
+			'washFold': 1,
+			'dryCleaning': 2,
+			'homeCleaning': 3
+		};
+	if (document.getElementById('service').value == 'dryclean') {
+		var globalData = {
+			'goBack': 'dryCleaning'
+		};
+	} else if (document.getElementById('service').value == 'maid') {
+		var globalData = {
+			'goBack': 'homeCleaning'
+		};
+	} else {
+		var globalData = {
+			'goBack': 'washFold'
+		};
+	}
+	function checkDates(){
+		var query = window.location.search.substring(1);
+		var qs = parse_query_string(query);
+		if(typeof qs !== 'undefined' && qs['day-start']){ //&& qs['washyCare'] == 1
+			var day_start_value = qs['day-start'].replace(/\+/g, " ");
+			var day_end_value = qs['day-end'].replace(/\+/g, " ");
+			var time_start_value = qs['time-start'].replace(/\+/g, " ");
+			var time_end_value = qs['time-end'].replace(/\+/g, " ");
+			var time_start_text = qs['time-start-text'].replace(/\+/g, " ");
+			var time_end_text = qs['time-end-text'].replace(/\+/g, " ");
+			var day_start_text = qs['day-start-text'].replace(/\+/g, " ");
+			var day_end_text = qs['day-end-text'].replace(/\+/g, " ");
+			//console.log(time_start);
+		
+			var option1 = document.createElement("option");
+			option1.text = time_start_text;
+			option1.value = time_start_value;
+			var select1 = document.getElementById("time-start");
+			//select1.appendChild(option1);
+			select1.insertBefore(option1, select1.firstChild);
+			document.getElementById("time-start").value = time_start_value;
+
+			if(document.getElementById('service').value != 'maid'){
+				var option2 = document.createElement("option");
+				option2.text = time_end_text;
+				option2.value = time_end_value;
+				var select2 = document.getElementById("time-end");
+				//select2.appendChild(option2);
+				select2.insertBefore(option2, select2.firstChild);
+				document.getElementById("time-end").value = time_end_value;
+
+				var option4 = document.createElement("option");
+				option4.text = day_end_text;
+				option4.value = day_end_value;
+				var select4 = document.getElementById("day-end");
+				//select4.appendChild(option4);
+				select4.insertBefore(option4, select4.firstChild);
+				document.getElementById("day-end").value = day_end_value;
+			}
+			var option3 = document.createElement("option");
+			option3.text = day_start_text;
+			option3.value = day_start_value;
+			var select3 = document.getElementById("day-start");
+			//select3.appendChild(option3);
+			select3.insertBefore(option3, select3.firstChild);
+			document.getElementById("day-start").value = day_start_value;
+			checkSameDay();
+		}
+	}
+	
+/*	function showHint() {
+		var str = document.getElementById("referral_email").value;
+		if (str != document.getElementById("email").value) {
+
+			xmlhttp = new XMLHttpRequest();
+			xmlhttp.onreadystatechange = function() {
+				if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+					var myarray = xmlhttp.responseText.split("|");
+
+					if (myarray[0] == "bad") {
+						document.getElementById("discount-receipt-total-price").innerHTML = "$" + myarray[1] + ".00";
+						document.getElementById("discount-receipt-price").innerHTML = "$" + myarray[1] + ".00";
+						document.getElementById("discount-receipt").innerHTML = "First Order Discount";
+						document.getElementById("store_credit").value = myarray[1];
+						document.getElementById("discount").value = myarray[1];
+						document.getElementById("referral_email").style.color = 'red';
+						updateTotal();
+					} else if (myarray[0] == "good") {
+						document.getElementById("discount-number").innerHTML = myarray[1];
+						if (myarray[1] > 30) {
+							myarray[1] = 30;
+						}
+						document.getElementById("discount-receipt-total-price").innerHTML = "$" + myarray[1] + ".00";
+						document.getElementById("discount-receipt-price").innerHTML = "$" + myarray[1] + ".00";
+						document.getElementById("discount-receipt").innerHTML = "Referral Discount";
+						document.getElementById("store_credit").value = myarray[1];
+						document.getElementById("discount").value = myarray[1];
+						document.getElementById("referral_email").style.color = 'black';
+						document.getElementsByClassName("global-alert")[0].classList.add("alert-open");
+						updateTotal();
+					}
+				}
+			}
+			xmlhttp.open("GET", "ajaxresponder?w=" + str, true);
+			xmlhttp.send();
+		} else {
+
+			return;
+		}
+
+	}*/
+
+	function setDiscount(val, text) {
+		document.getElementById("discount-receipt-total-price").innerHTML = "$" + val + ".00";
+		document.getElementById("discount-receipt-price").innerHTML = "$" + val + ".00";
+		document.getElementById("discount-receipt").innerHTML = text; //"First Order discount"
+		updateTotal();
+	}
+
+	function isMobileDevice() {
+		//return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+		var check = false;
+		  (function(a){if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(a)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0,4))) check = true;})(navigator.userAgent||navigator.vendor||window.opera);
+		  return check;
+	};
+	//window.mobilecheck = function() {
+	//};
+	if (isMobileDevice()) {
+		document.getElementById("device").value = 'Mobile Website';
+		document.getElementById("signed_up").value = 'Mobile Website';
+	} else {
+		document.getElementById("device").value = 'Desktop Website';
+		document.getElementById("signed_up").value = 'Desktop Website';
+	}
+	if (!document.getElementById("user_id").value > 0) {
+		//document.getElementsByClassName("global-alert")[0].classList.add("alert-open");
+		var hotel_user = getCookie('hotel_user'); //CHECK IF USER TRIED SUBMITTING ORDER AS HOTEL AND CAME BACK
+		if(hotel_user==1){
+			console.log("hotel user " + hotel_user);
+		   //document.getElementById('zipcode_alert').innerHTML='Hotel customers are not eligible for $10 discount'; 
+			document.getElementById('discount').value=0; 
+			document.getElementsByClassName('global-alert')[0].classList.remove('alert-open'); 
+			document.getElementsByClassName('global-alert')[0].style.display = "none";
+			document.getElementById('tourist').value = 'on';
+			setDiscount(0, '');
+		}
+	}
+	LogStep('step1');
+	WashOrder(0);
+	var query = window.location.search.substring(1);
+	var qs = parse_query_string(query);
+	if(typeof qs !== 'undefined' && qs['corona_discount']){
+		if(qs['corona_discount']=="yes"){
+			document.getElementById('tip-header').innerHTML = 'Estimated price based on 23 lbs bag. It will be adjusted according to weight of the bag at $0.63 /lb';
+			document.getElementById("discount-receipt").innerHTML = "IM AFFECTED DISCOUNT 60% OFF";
+			document.getElementById("discount-receipt-total-price").innerHTML = "60% OFF";
+			document.getElementById("discount-receipt-price").innerHTML = "60% OFF";
+			document.getElementById("discount").value = "15";
+			document.getElementById("total_1").innerHTML = "$15";
+			document.getElementById("total_2").innerHTML = "$15";
+			setDiscount(15, 'IM AFFECTED DISCOUNT 60% OFF');
+			document.getElementById("referral_email").value = "corona_discount";
+			document.getElementsByClassName('global-alert')[0].style.display = "none";
+			document.getElementById("already-link1").style.display = "none";
+			document.getElementById("already-link2").style.display = "none";
+			document.getElementById("already-link3").style.display = "none";
+		}
+	}
+</script>
+<script type="text/javascript" src="assets/templates/eflaundry/js/time/timedatecode230f4.js?v=3"></script>	
+<script src="assets/templates/eflaundry/js/jquery.maskedinput141.js" type="text/javascript"></script>
+
+</body>
+    
+<!-- Mirrored from www.WashyCare.com/order-page?service=maid by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 13 Aug 2020 20:47:19 GMT -->
+</html>

@@ -1,0 +1,403 @@
+.premium {
+		color: #2497dc !important;
+	}
+.deep {
+	color: #da3808 !important;
+}
+.checklist-wrapper {
+	position: relative;
+	background-color: #f8fcf2;
+	-webkit-transition: background-color 350ms 0s ease;
+	-o-transition: background-color 350ms 0s ease;
+	transition: background-color 350ms 0s ease;
+	padding: 60px 0
+}
+
+.checklist-wrapper h3 {
+	padding-bottom: 60px;
+	margin-bottom: 0;
+	margin-top: 0;
+	text-align: center
+}
+
+@media screen and (max-width:639px) {
+	.checklist-wrapper {
+		padding: 40px 0
+	}
+	.checklist-wrapper h3 {
+		padding-bottom: 40px
+	}
+}
+
+.checklist-wrapper .checklist-types {
+	margin-left: 10.16666667%;
+	margin-right: 10.16666667%
+}
+
+.checklist-wrapper .checklist-types ul {
+	display: -webkit-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-align-items: flex-start;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	-webkit-justify-content: flex-start;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	-webkit-flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap
+}
+
+.checklist-wrapper .checklist-types ul li {
+	display: inline-block;
+	margin-right: 6vw
+}
+
+.checklist-wrapper .checklist-types ul li h1 {
+	color: rgba(22, 55, 75, .2)
+}
+
+.checklist-wrapper .checklist-types ul li .soft-btn {
+	-webkit-opacity: 0;
+	-moz-opacity: 0;
+	opacity: 0;
+	color: #3d77ea;
+	float: left;
+	background-color: rgba(0, 0, 0, .03);
+	padding: 10px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-transition: all 350ms 0s ease;
+	-o-transition: all 350ms 0s ease;
+	transition: all 350ms 0s ease
+}
+
+.checklist-wrapper .checklist-types ul li .soft-btn .svg {
+	margin-left: 3px
+}
+
+.checklist-wrapper .checklist-types ul li.active h1 {
+	color: #16374b
+}
+
+.checklist-wrapper .checklist-types ul li.active .soft-btn {
+	-webkit-opacity: 1;
+	-moz-opacity: 1;
+	opacity: 1
+}
+
+@media screen and (max-width:1099px) and (min-width:940px) {
+	.checklist-wrapper .checklist-types {
+		margin-left: 8.16666667%;
+		margin-right: 8.16666667%
+	}
+}
+
+@media screen and (max-width:1099px) {
+	.checklist-wrapper .checklist-types {
+		margin-left: 0;
+		margin-right: 0;
+		padding-left: 8.16666667%;
+		margin-right: 0;
+		width: auto;
+		overflow-x: scroll
+	}
+	.checklist-wrapper .checklist-types ul li {
+		white-space: nowrap
+	}
+	.checklist-wrapper .checklist-types ul li:last-child {
+		padding-right: 2%
+	}
+}
+
+@media screen and (max-width:639px) {
+	.checklist-wrapper .checklist-types {
+		padding-left: 5.08333333%
+	}
+}
+
+.checklist-wrapper .checklist-items {
+	margin-top: 60px;
+	margin-left: 10.16666667%;
+	margin-right: 10.16666667%;
+	-webkit-column-count: 4;
+	-moz-column-count: 4;
+	column-count: 4
+}
+
+.checklist-wrapper .checklist-items .group {
+	float: left;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	margin-bottom: 50px;
+	-webkit-column-break-inside: avoid;
+	page-break-inside: avoid;
+	-moz-column-break-inside: avoid;
+	break-inside: avoid
+}
+
+.checklist-wrapper .checklist-items .group h4 {
+	-webkit-transition: color 250ms 0s ease;
+	-o-transition: color 250ms 0s ease;
+	transition: color 250ms 0s ease;
+	margin-top: 0;
+	margin-bottom: 30px
+}
+
+.checklist-wrapper .checklist-items .group ul li {
+	font-size: 16px;
+	line-height: 1.65;
+	font-family: BrownStd, Helvetica, sans-serif;
+	font-weight: 400;
+	color: #16374b;
+	margin-bottom: 15px;
+	text-decoration: line-through;
+	-webkit-transition: color 250ms 0s ease;
+	-o-transition: color 250ms 0s ease;
+	transition: color 250ms 0s ease;
+	color: rgba(22, 55, 75, .3)
+}
+
+.checklist-wrapper .checklist-items .group ul li:last-child {
+	margin-bottom: 0
+}
+
+.checklist-wrapper .checklist-items .group ul li.grey {
+	font-family: Merriweather, serif;
+	color: #9fa4a6
+}
+
+@media screen and (max-width:1099px) and (min-width:940px) {
+	.checklist-wrapper .checklist-items .group ul li {
+		font-size: 15px
+	}
+}
+
+@media screen and (max-width:1099px) {
+	.checklist-wrapper .checklist-items .group ul li {
+		font-size: 15px
+	}
+}
+
+@media screen and (max-width:639px) {
+	.checklist-wrapper .checklist-items .group ul li {
+		font-size: 14px;
+		line-height: 1.4
+	}
+}
+
+.checklist-wrapper .checklist-items .group ul li.visible {
+	color: #16374b;
+	text-decoration: none
+}
+
+@media screen and (max-width:1099px) and (min-width:940px) {
+	.checklist-wrapper .checklist-items {
+		margin-left: 8.16666667%;
+		margin-right: 8.16666667%
+	}
+}
+
+@media screen and (max-width:1099px) {
+	.checklist-wrapper .checklist-items {
+		margin-left: 8.16666667%;
+		margin-right: 8.16666667%;
+		-webkit-column-count: 3;
+		-moz-column-count: 3;
+		column-count: 3
+	}
+	.checklist-wrapper .checklist-items .group ul li {
+		margin-bottom: 8px
+	}
+}
+
+@media screen and (max-width:639px) {
+	.checklist-wrapper .checklist-items {
+		margin-left: 5.08333333%;
+		margin-right: 5.08333333%;
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+		column-count: 2
+	}
+	.checklist-wrapper .checklist-items .group ul li {
+		margin-bottom: 8px
+	}
+}
+
+.checklist-wrapper[data-active-clean=standard_plus] {
+	background-color: #63ead3
+}
+
+.checklist-wrapper[data-active-clean=standard_plus] h3 {
+	color: #f8fcf2
+}
+
+.checklist-wrapper[data-active-clean=standard_plus] .checklist-types li.active h1 {
+	color: #f8fcf2
+}
+
+.checklist-wrapper[data-active-clean=standard_plus] .checklist-types li.active .soft-btn {
+	color: #f8fcf2
+}
+
+.checklist-wrapper[data-active-clean=deep] {
+	background-color: #3d77ea
+}
+
+.checklist-wrapper[data-active-clean=deep] h3 {
+	color: #f8fcf2
+}
+
+.checklist-wrapper[data-active-clean=deep] .group h4 {
+	color: #f8fcf2
+}
+
+.checklist-wrapper[data-active-clean=deep] .group ul li.visible {
+	color: #f8fcf2
+}
+
+.checklist-wrapper[data-active-clean=deep] .checklist-types li.active h1 {
+	color: #f8fcf2
+}
+
+.checklist-wrapper[data-active-clean=deep] .checklist-types li.active .soft-btn {
+	color: #f8fcf2
+}
+
+.checklist-wrapper[data-active-clean=deep] .asterisk ol li {
+	color: #16374b
+}
+
+.checklist-wrapper .asterisk {
+	position: absolute;
+	width: 83.66666667%;
+	margin-left: 8.16666667%
+}
+
+@media screen and (max-width:639px) {
+	.checklist-wrapper .asterisk {
+		bottom: 0
+	}
+}
+
+.checklist-wrapper .asterisk ol li {
+	margin: 0 auto;
+	font-size: 11px;
+	color: rgba(22, 55, 75, .5)
+}
+
+.clean-details {
+	background-color: #14374c;
+	padding: 120px 0
+}
+
+.clean-details .left-side {
+	margin-left: 10.16666667%;
+	width: 24.5%;
+	float: left
+}
+
+.clean-details .left-side>p {
+	margin-top: 40px;
+	padding-top: 40px;
+	border-top: 2px solid #f6f7f9;
+	color: #fff
+}
+
+.clean-details .right-side {
+	float: left;
+	margin-left: 14.33333333%;
+	width: 40.83333333%;
+	display: -webkit-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-align-items: flex-start;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	-webkit-justify-content: space-between;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap
+}
+
+.clean-details .right-side .add-item {
+	width: 48%;
+	margin-bottom: 120px
+}
+
+.clean-details .right-side .add-item .meta>span {
+	display: block
+}
+
+.clean-details .right-side .add-item .meta>span.add-on {
+	font-size: 18px;
+	color: #fff;
+	margin-bottom: 15px
+}
+
+.clean-details .right-side .add-item .meta>span.price {
+	color: #63ead3;
+	font-family: Merriweather, serif;
+	font-style: italic;
+	font-size: 14px
+}
+
+.clean-details .right-side .add-item .svg {
+	float: left;
+	margin-right: 25px
+}
+
+@media screen and (max-width:1099px) and (min-width:940px) {
+	.clean-details .left-side {
+		width: 30.66666667%
+	}
+	.clean-details .right-side {
+		margin-left: 8.16666667%;
+		width: 42.83333333%
+	}
+}
+
+@media screen and (max-width:1099px) {
+	.clean-details {
+		padding: 120px 0 40px
+	}
+	.clean-details .left-side {
+		margin-left: 8.16666667%;
+		width: 83.66666667%
+	}
+	.clean-details .left-side p {
+		margin-top: 0;
+		padding-top: 40px;
+		border-top: 0 solid #f6f7f9;
+		margin-bottom: 60px;
+		padding-bottom: 60px;
+		border-bottom: 2px solid #f6f7f9
+	}
+	.clean-details .right-side {
+		margin-left: 8.16666667%;
+		width: 83.66666667%
+	}
+	.clean-details .right-side .add-item {
+		margin-bottom: 60px
+	}
+}
